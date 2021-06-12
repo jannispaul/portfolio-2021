@@ -1,0 +1,26 @@
+[
+	{
+		"id": 1,
+		"question": "How much does a website cost?",
+		"answer": "Websites are like cars. Depending on the desired quality, features, and time frame, the price can vary greatly. The projects I do usually end up somewhere between 3,000 € and 10,000 €.",
+		"active": true
+	},
+	{
+		"id": 2,
+		"question": "How long does it take to build a website?",
+		"answer": "Just like the cost, the time frame will vary based on the desired results. Most of my projects take around 1 to 3 months from start to finish, and I’ll have a first draft of your website ready within 2 weeks. Looking for a fast turnaround? The more concrete ideas and material you have going in, the sooner I can start with design and development. Not sure where to start?  I can help you create a concept that aligns with your values and vision.",
+		"active": false
+	},
+	{
+		"id": 3,
+		"question": "Can I edit the website myself after it’s finished?",
+		"answer": "Most of my websites are developed with Webflow. This means that you can easily edit the copy and images once the site is live (and I can walk you through how that’s done).",
+		"active": false
+	},
+	{
+		"id": 4,
+		"question": "Do you only do websites?",
+		"answer": "Nope! For the sake of simplicity, I only talk about making websites here. But I also have experience in UX/UI, app design, prototyping, technical SEO, automation, JAMstack, and more.",
+		"active": false
+	}
+]
