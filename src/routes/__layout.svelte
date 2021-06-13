@@ -7,7 +7,11 @@
 <svelte:head>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
 	<meta name="keywords" content="" />
-
+	
+	<!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+	
 	<meta name="theme-color" content="#333333" />
 	<!-- <link rel="sitemap" type="application/xml" href="/sitemap.xml" /> -->
 	<link rel="canonical" href="https://musikversicherung.com" />

@@ -32,7 +32,7 @@
 		z-index: 0;
 		position: absolute;
 		right: var(--side-padding);
-		width: 65%;
+		width: 12rem;
 		border-radius: 500rem;
 	}
 </style>
