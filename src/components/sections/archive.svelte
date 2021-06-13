@@ -2,7 +2,8 @@
 	import projects from '/src/data/projects.json';
 </script>
 
-<section id="archive">
+<section id="archive" >
+<div class="archive-container">
 	<h2>Looking for more?</h2>
 	<div class="filter">
 		<button data-name="all" class="active">All</button>
@@ -42,9 +43,15 @@
 			{/if}
 		{/each}
 	</div>
+	</div>
 </section>
 
 <style>
+	.archive-container {
+		width: 100%;
+		max-width: var(--max-width);
+		margin: auto;
+	}
 	.date {
 		display: hidden;
 	}
@@ -104,6 +111,9 @@
 	}
 
 	@media (min-width: 769px) {
+		.table {
+			font-size: 1rem;
+		}
 		.row {
 			grid-template-columns: 2.3fr 3fr 1fr;
 		}

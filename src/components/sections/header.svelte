@@ -12,9 +12,12 @@
 
 <style>
 	header {
-		padding: 1rem;
 		display: flex;
 		justify-content: space-between;
+		max-width: var(--max-width);
+		margin: auto;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
 	}
 	@media (min-width: 769px) {
 		header {

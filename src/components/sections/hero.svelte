@@ -19,27 +19,29 @@
 <style>
 	section {
 		position: relative;
-		height:calc(90vh - 4rem);
+		height: calc(90vh - 4rem);
 		display: flex;
 		align-items: flex-end;
 		/* padding-top: calc(90vh - 22ch); */
 	}
 	@media (min-width: 769px) {
-			section {		
-				height:calc(90vh - 15rem);
-	}
-	.hero-content{
-		
-	}
-		.anchor-links > a{
+		section {
+			height: calc(100vh - 1rem);
+		}
+		.hero-content {
+			width: 100%;
+			max-width: var(--max-width);
+			margin: auto;
+		}
+		.anchor-links > a {
 			margin-right: 1rem;
 		}
 		.arrow {
 			position: absolute;
-			top: 0;
-			right: 4rem;
+			top: -4rem;
+			right: 6rem;
 			bottom: 0;
-			height: 100%;
+			height: 27rem;
 		}
 	}
 </style>

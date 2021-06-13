@@ -8,6 +8,7 @@
 	--color-white: #fff9f2;
 	--color-accent: red;
 	--side-padding: 1.5rem;
+	--max-width: 1920px;
 	background: var(--color-bg);
 	color: var(--color-white);
 	font-family: 'Space Grotesk', sans-serif;
@@ -51,8 +52,13 @@ a {
 	color: var(--color-white);
 }
 
-section {
+/* section {
 	padding: var(--side-padding);
+} */
+header,
+section,
+footer {
+	padding: 0 var(--side-padding);
 }
 .desktop-only {
 	display: none;
@@ -68,15 +74,17 @@ section {
 
 @media (min-width: 769px) {
 	:root {
-		font-size: 18px;
-		--side-padding: 3rem;
+		font-size: clamp(16px, 1.5vw, 24px);
+		--side-padding: 4rem;
 	}
-	section {
-		padding: 4rem;
+	header,
+	section,
+	footer {
+		padding: 0 var(--side-padding);
 	}
 	h1 {
 		line-height: 0.9;
-		font-size: 6rem;
+		font-size: 5rem;
 		max-width: 40rem;
 		margin-bottom: 2rem;
 	}
@@ -85,5 +93,11 @@ section {
 	}
 	.desktop-only {
 		display: block;
+	}
+}
+@media (min-width: 1920px) {
+	:root {
+		font-size: 18px;
+		--side-padding: 4rem;
 	}
 }

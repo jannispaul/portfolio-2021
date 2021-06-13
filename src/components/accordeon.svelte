@@ -18,16 +18,18 @@
 	};
 </script>
 
-{#each sections as section}
-	<div class="accordion">
-		<button on:click={() => expand(section)}>{section.question}</button>
-		{#if section.active}
-			<div class="slider" transition:slide>
-				<p>{section.answer}</p>
-			</div>
-		{/if}
-	</div>
-{/each}
+<div class="accordeon">
+	{#each sections as section}
+		<div class="accordion-item">
+			<button on:click={() => expand(section)}>{section.question}</button>
+			{#if section.active}
+				<div class="slider" transition:slide>
+					<p>{section.answer}</p>
+				</div>
+			{/if}
+		</div>
+	{/each}
+</div>
 
 <style>
 	button {
@@ -35,8 +37,11 @@
 		font-weight: 600;
 		margin-bottom: 0.5rem;
 	}
-	.accordion {
+	.accordion-item {
 		margin-bottom: 1rem;
+		max-width: 30rem;
+		grid-column: 2;
+		grid-row: 2;
 	}
 	.slider {
 		color: white;
