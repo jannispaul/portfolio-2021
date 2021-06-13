@@ -1,5 +1,5 @@
 <script>
-	import arrow from '/static/images/arrow 2.svg';
+	import arrow from '/static/images/arrow-2.svg';
 	import Accordeon from '/src/components/accordeon.svelte';
 </script>
 

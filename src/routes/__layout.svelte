@@ -9,7 +9,7 @@
 	<meta name="keywords" content="" />
 
 	<meta name="theme-color" content="#333333" />
-	<link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+	<!-- <link rel="sitemap" type="application/xml" href="/sitemap.xml" /> -->
 	<link rel="canonical" href="https://musikversicherung.com" />
 	<meta property="og:image" content="https://musikversicherung.com/static/social-image.jpg" />
 	<meta property="og:image:type" content="image/jpeg" />
