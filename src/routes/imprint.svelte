@@ -19,7 +19,7 @@
 </section>
 
 <style>
-section{
-	min-height: calc(100vh - 14rem);
-	
-	}	</style>
+	section {
+		min-height: calc(100vh - 14rem);
+	}
+</style>

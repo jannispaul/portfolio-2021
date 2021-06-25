@@ -2,70 +2,76 @@
 	import projects from '/src/data/projects.json';
 </script>
 
-<section id="archive" >
-<div class="archive-container">
-	<h2>Looking for more?</h2>
-	<div class="filter">
-		<button data-name="all" class="active">All</button>
-		<button data-name="projects" class="">Projects</button>
-		<button data-name="education" class="">Education</button>
-	</div>
-	<div class="table">
-		{#each projects as { client, category, year, type, description, hidden, link, linkText }, i}
-			{#if !hidden}
-				<div class="row {link || (description && 'clickable')}" data-name={type}>
-					<div class="client">
-						<p>
-							<span>{client}</span>
-						</p>
-					</div>
-					<div class="">
-						<p>
-							<span>{category}</span>
-						</p>
-					</div>
-					<div class="date desktop-only">
-						<p>{year}</p>
-					</div>
+<section id="archive">
+	<div class="archive-container">
+		<div class="table">
+			<div class="table-header">
+			<h2>Archive</h2>
+				<div class="filter">
+					<button data-name="all" class="active">All</button>
+					<button data-name="projects" class="">Projects</button>
+					<button data-name="education" class="">Education</button>
 				</div>
-				{#if link || description}
-					<div class="hidden details ">
-						{#if description}
-							<p class="project-description">{description}</p>
-						{/if}
-						{#if link}
-							<p class="project-link">
-								<a href={link} target="_blank" rel="noopener noreferrer">{linkText}</a>
+			</div>
+			{#each projects as { client, category, year, type, description, hidden, link, linkText }, i}
+				{#if !hidden}
+					<div class="row {link || (description && 'clickable')}" data-name={type}>
+						<div class="client">
+							<p>
+								<span>{client}</span>
 							</p>
-						{/if}
+						</div>
+						<div class="">
+							<p>
+								<span>{category}</span>
+							</p>
+						</div>
+						<div class="date desktop-only">
+							<p>{year}</p>
+						</div>
 					</div>
+					{#if link || description}
+						<div class="hidden details ">
+							{#if description}
+								<p class="project-description">{description}</p>
+							{/if}
+							{#if link}
+								<p class="project-link">
+									<a href={link} target="_blank" rel="noopener noreferrer">{linkText}</a>
+								</p>
+							{/if}
+						</div>
+					{/if}
 				{/if}
-			{/if}
-		{/each}
-	</div>
+			{/each}
+		</div>
 	</div>
 </section>
 
 <style>
+	/* Hidden on mobile */
+	.date, 	.filter {
+		display: none;
+	}
+
 	.archive-container {
 		width: 100%;
 		max-width: var(--max-width);
 		margin: auto;
-	}
-	.date {
-		display: hidden;
 	}
 	.table {
 		width: 100%;
 		margin-top: 1rem;
 		font-size: 0.89rem;
 	}
-
+	.table-header{
+		display: flex;
+		justify-content: space-between;
+	}
 	.row {
 		display: grid;
 		grid-template-columns: 1fr 1.1fr;
 		border-top: 1px solid var(--color-white);
-		/* height: var(--s3); */
 		padding: 1rem 0;
 		align-items: center;
 	}
@@ -98,6 +104,9 @@
 		color: var(--color-white);
 		position: absolute;
 	}
+	button:not(:last-of-type){
+		margin-right: 1rem;
+	}
 	button.active::after {
 		content: '*';
 		color: var(--color-accent);
@@ -113,6 +122,9 @@
 	@media (min-width: 769px) {
 		.table {
 			font-size: 1rem;
+		}
+		.filter, .date{
+			display: block;
 		}
 		.row {
 			grid-template-columns: 2.3fr 3fr 1fr;

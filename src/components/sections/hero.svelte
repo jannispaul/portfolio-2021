@@ -1,47 +1,42 @@
 <script>
-	import arrow from '/static/images/arrow.svg';
+	import underline from '/static/images/hero-underline.svg';
 </script>
 
 <section>
 	<div class="hero-content">
 		<h1>Bold websites that simply work</h1>
-		<nav class="desktop-only anchor-links">
-			<a href="#about">About me</a>
-			<a href="#selected-work">Selected work</a>
-			<a href="#faq">FAQ</a>
-			<a href="#contact">Contact</a>
-			<a href="#archive">Archive</a>
-		</nav>
 	</div>
-	<img src={arrow} alt="" class="arrow desktop-only" />
+	<img src={underline} alt="" class="underline desktop-only" />
 </section>
 
 <style>
 	section {
 		position: relative;
-		height: calc(90vh - 4rem);
+		min-height: calc(60vh - 4rem);
 		display: flex;
 		align-items: flex-end;
+		margin-bottom: 5rem;
 		/* padding-top: calc(90vh - 22ch); */
+		/* margin: 0 auto 5rem;
+		max-width: var(--max-width); */
 	}
 	@media (min-width: 769px) {
 		section {
-			height: calc(100vh - 1rem);
+			height: calc(100vh - 15rem);
 		}
 		.hero-content {
 			width: 100%;
 			max-width: var(--max-width);
-			margin: auto;
+			/* margin: auto; */
 		}
 		.anchor-links > a {
 			margin-right: 1rem;
 		}
-		.arrow {
+		.underline {
 			position: absolute;
-			top: -4rem;
-			right: 6rem;
-			bottom: 0;
-			height: 27rem;
+			left: 12rem;
+			bottom: -2rem;
+			height: 4rem;
 		}
 	}
 </style>

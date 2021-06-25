@@ -1,21 +1,22 @@
 <script>
-	import arrow from '/static/images/arrow-2.svg';
 	import Accordeon from '/src/components/accordeon.svelte';
 </script>
 
 <section id="faq">
 	<div class="faq-container">
-		<h2 class="faq-headline">Got questions?<br />I got answers</h2>
-		<img src={arrow} alt="" class="desktop-only arrow" />
+		<h2 class="faq-headline">FAQ</h2>
 		<Accordeon />
 	</div>
 </section>
 
 <style>
-section {
-			padding-top: 1rem;
-			padding-bottom: 4rem;
-		}
+	section{
+				max-width: var(--max-width);
+	}
+	/* section {
+		padding-top: 1rem;
+		padding-bottom: 4rem;
+	}
 	@media (min-width: 769px) {
 		section {
 			display: flex;
@@ -36,5 +37,5 @@ section {
 			grid-column: 1;
 			grid-row: 2;
 		}
-	}
+	} */
 </style>

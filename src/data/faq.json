@@ -7,13 +7,13 @@
 	},
 	{
 		"id": 2,
-		"question": "How long does it take to build a website?",
+		"question": "How long does it take to build?",
 		"answer": "Just like the cost, the time frame will vary based on the desired results. Most of my projects take around 1 to 3 months from start to finish, and I’ll have a first draft of your website ready within 2 weeks. Looking for a fast turnaround? The more concrete ideas and material you have going in, the sooner I can start with design and development. Not sure where to start?  I can help you create a concept that aligns with your values and vision.",
 		"active": false
 	},
 	{
 		"id": 3,
-		"question": "Can I edit the website myself after it’s finished?",
+		"question": "Can I edit the website myself?",
 		"answer": "Most of my websites are developed with Webflow. This means that you can easily edit the copy and images once the site is live (and I can walk you through how that’s done).",
 		"active": false
 	},

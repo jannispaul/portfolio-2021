@@ -9,30 +9,21 @@
 </footer>
 
 <style>
-footer {
+	footer {
 		padding: 0 var(--side-padding);
-
-		/* display: flex;
-		justify-content: space-between; */
-		max-width: var(--max-width);
-		margin: auto;
+		margin-bottom: 1rem;
 	}
-		.footer-container {
+	.footer-container {
 		display: flex;
 		justify-content: space-between;
 		border-top: 1px solid var(--color-white);
 		padding-top: 1rem;
 		padding-bottom: 1rem;
 	}
-	/* @media (min-width: 769px) {
+	@media (min-width: 769px) {
 		footer {
-			padding: 4rem;
+		margin-bottom: 2rem;
 		}
-	} */
-	/* footer {
-		width: 100%;
-		max-width: var(--max-width);
-		margin: auto;
-	} */
-
+	}
+	
 </style>

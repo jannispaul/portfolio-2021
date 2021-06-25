@@ -6,8 +6,14 @@
 		<!-- <img src={logo} alt="SvelteKit" /> -->
 		Jannis Paul Wicke
 	</a>
-	<a href="mailto:hi@paul-wicke.de" class="mobile-only">Contact</a>
-	<a href="mailto:hi@paul-wicke.de" class="desktop-only">hi@paul-wicke.de</a>
+	<nav>
+		<a href="#about">About</a>
+		<a href="#selected-work">Selected Work</a>
+		<a href="#faq">FAQ</a>
+		<a href="#contact">Contact</a>
+		<a href="#archive">Archive</a>
+	</nav>
+
 </header>
 
 <style>
@@ -19,9 +25,18 @@
 		padding-top: 1rem;
 		padding-bottom: 1rem;
 	}
+	nav {
+		display: none;
+	}
+	nav > a:not(:last-of-type) {
+		margin-right: 1rem;
+	}
 	@media (min-width: 769px) {
 		header {
 			padding: 4rem;
+		}
+		nav {
+			display: inline-block;
 		}
 	}
 </style>
