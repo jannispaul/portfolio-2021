@@ -1,5 +1,31 @@
 <script>
-	import projects from '/src/data/projects.json';
+	import { slide } from 'svelte/transition';
+	import projectsConstant from '/src/data/projects.json';
+	
+	// Create projects variable (that is not a constant) and add an id to each element
+	let projects = projectsConstant.map((project,i) => ({...project, id: i}));
+	// Create array filteredProjects to apply filters to 
+	$: filteredProjects = projects;
+	// Create variable that stores the active filter
+	let activeFilter;
+
+	// Set all active states to false and clicked to true
+	const expand = (project) => {
+		filteredProjects = filteredProjects.map((s) => {
+			s.active = false;
+			if (s.id === project.id) {
+				s.active = true;
+			}
+			return s;
+		});
+	};
+
+	// Filter filteredProjects by type value  
+	const filter = (type) => {
+		activeFilter = type;
+		filteredProjects = projects.filter(project => type === "all" || project.type === type);
+	}
+	filter("all");
 </script>
 
 <section id="archive">
@@ -8,36 +34,36 @@
 			<div class="table-header">
 			<h2>Archive</h2>
 				<div class="filter">
-					<button data-name="all" class="active">All</button>
-					<button data-name="projects" class="">Projects</button>
-					<button data-name="education" class="">Education</button>
+					<button data-name="all" class="{activeFilter ==="all" && "active"}" on:click={() => filter("all")}>All</button>
+					<button data-name="projects" class="{activeFilter ==="projects" && "active"}" on:click={() => filter("projects")}>Projects</button>
+					<button data-name="education" class="{activeFilter ==="education" && "active"}" on:click={() => filter("education")}>Education</button>
 				</div>
 			</div>
-			{#each projects as { client, category, year, type, description, hidden, link, linkText }, i}
-				{#if !hidden}
-					<div class="row {link || (description && 'clickable')}" data-name={type}>
+			{#each filteredProjects as project}
+				{#if !project.hidden}
+					<div class="row {project.link && 'clickable' || (project.description && 'clickable')}" data-name={project.type} on:click={() => expand(project)}>
 						<div class="client">
 							<p>
-								<span>{client}</span>
+								<span>{project.client}</span>
 							</p>
 						</div>
 						<div class="">
 							<p>
-								<span>{category}</span>
+								<span>{project.category}</span>
 							</p>
 						</div>
 						<div class="date desktop-only">
-							<p>{year}</p>
+							<p>{project.year}</p>
 						</div>
 					</div>
-					{#if link || description}
-						<div class="hidden details ">
-							{#if description}
-								<p class="project-description">{description}</p>
+					{#if (project.active && project.link) || (project.active && project.description)}
+						<div class="details" transition:slide>
+							{#if project.description}
+								<p class="project-description">{project.description}</p>
 							{/if}
-							{#if link}
+							{#if project.link}
 								<p class="project-link">
-									<a href={link} target="_blank" rel="noopener noreferrer">{linkText}</a>
+									<a href={project.link} target="_blank" rel="noopener noreferrer">{project.linkText}</a>
 								</p>
 							{/if}
 						</div>
@@ -99,11 +125,11 @@
 		font-style: italic;
 		cursor: pointer;
 	}
-	.clickable div:first-of-type p::after {
+	/* .clickable div:first-of-type p::after {
 		content: '*';
 		color: var(--color-white);
 		position: absolute;
-	}
+	} */
 	button:not(:last-of-type){
 		margin-right: 1rem;
 	}

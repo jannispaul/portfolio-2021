@@ -31,6 +31,25 @@
 	nav > a:not(:last-of-type) {
 		margin-right: 1rem;
 	}
+	nav > a{
+		position: relative;
+	}
+	nav > a::before{
+		content: " ";
+		position: absolute;
+		bottom: -0.1rem;
+		width: 100%;
+		left:0;
+		background: var(--color-white);
+		height: 0.1rem;
+		  visibility: hidden;
+        transform: scaleX(0);
+        transition: all 200ms cubic-bezier(.54,.17,.23,.97); 
+	}
+		nav > a:hover::before{
+			visibility: visible;
+ 			transform: scaleX(1);
+		}
 	@media (min-width: 769px) {
 		header {
 			padding: 4rem;
