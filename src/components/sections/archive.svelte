@@ -54,6 +54,7 @@
 			{#each filteredProjects as project}
 				{#if !project.hidden}
 					<button
+						disabled={(!project.link && !project.description ? true : false)}
 						class="row {(project.link && 'clickable') ||
 							(project.description && 'clickable')} {project.active && 'active'}"
 						data-name={project.type}
@@ -113,6 +114,9 @@
 	.table-header {
 		display: flex;
 		justify-content: space-between;
+	}
+	button:disabled{
+		pointer-events: none;
 	}
 	button.row {
 		width: 100%;

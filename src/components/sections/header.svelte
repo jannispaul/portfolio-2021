@@ -4,11 +4,11 @@
 <header>
 	<a href="/"> Jannis Paul Wicke </a>
 	<nav>
-		<a href="#about">About</a>
-		<a href="#selected-work">Selected Work</a>
-		<a href="#faq">FAQ</a>
-		<a href="#contact">Contact</a>
-		<a href="#archive">Archive</a>
+		<a href="/#about">About</a>
+		<a href="/#selected-work">Selected Work</a>
+		<a href="/#faq">FAQ</a>
+		<a href="/#contact">Contact</a>
+		<a href="/#archive">Archive</a>
 	</nav>
 </header>
 

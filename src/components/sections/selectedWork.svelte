@@ -6,7 +6,7 @@
 <section id="selected-work">
 	<div class="selected-work-container">
 		<h2>Selected Work</h2>
-		<a href="/works/joinpolitics" class="project">
+		<a href="/works/joinpolitics" class="project" sveltekit:scroll>
 			<img src={joinPolitics} alt="Screenshot of joinpolitics website" class="thumbnail" />
 			<div class="project-copy">
 				<svg

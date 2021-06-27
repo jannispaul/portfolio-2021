@@ -117,30 +117,38 @@ footer {
 	justify-content: center;
 	align-items: center;
 	border-radius: var(--size);
-	/* background-image: linear-gradient(132deg, #ff5c00 32%, #ff4848 51%, #6248ff 73%); */
-	background: #ff5c00;
+	/* background: #ff5c00; */
+	background-image: linear-gradient(-30deg, #ff5c00 42%, #aa48ff 51%, #0038ff 93%);
 	width: var(--size);
 	height: var(--size);
-	-webkit-filter: blur(calc(var(--size) / 4));
-	filter: blur(calc(var(--size) / 4));
+
+	filter: blur(calc(var(--size) / 5));
 	z-index: 0;
 	pointer-events: none;
 	will-change: transform;
 	transform-style: preserve-3d;
 }
 .second {
+	--size: 25rem;
 	background: #0038ff;
+	background-image: linear-gradient(60deg, #ff5c00 42%, #aa48ff 51%, #0038ff 73%);
 	top: calc(var(--size) / -1.2);
 	right: calc(var(--size) / 2);
 	bottom: auto;
 	left: auto;
+	width: var(--size);
+	height: var(--size);
 }
 .third {
+	--size: 18rem;
 	background: #ff5c00;
-	top: calc(var(--size) / -1.5);
-	right: calc(var(--size) / -3);
+	background-image: linear-gradient(60deg, #ff5c00 42%, #aa48ff 51%, #0038ff 73%);
+	top: calc(var(--size) / -2);
+	right: calc(var(--size) / 2);
 	bottom: auto;
 	left: auto;
+	width: var(--size);
+	height: var(--size);
 }
 /* Noise layer */
 .noise {
