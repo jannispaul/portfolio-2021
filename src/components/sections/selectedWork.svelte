@@ -1,7 +1,10 @@
 <script>
 	import joinPolitics from '/static/images/joinpolitics.jpg';
-	// import arrowRightUp from '/static/images/arrow-right-up.svg';
 </script>
+<svelte:head>
+	<title>Jannis Paul Wicke – JoinPolitics Webflow Website</title>
+	<meta name="description" content="A unique webflow website with custom cms slider"/>
+</svelte:head>
 
 <section id="selected-work">
 	<div class="selected-work-container">

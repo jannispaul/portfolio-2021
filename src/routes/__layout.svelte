@@ -31,7 +31,9 @@
 		rel="stylesheet"
 	/>
 	<meta name="theme-color" content="#333333" />
-	<meta name="description" content="Bold websites that simply work."/>
+	<html lang="en" />
+	<meta name="keywords" content="Website, webflow, design, berlin, developement, entwicklung">
+	<meta name="author" content="Jannis Paul Wicke">
 	<!-- <link rel="sitemap" type="application/xml" href="/sitemap.xml" /> -->
 	<!-- <link rel="canonical" href="https://paul-wicke.de" /> -->
 	<meta property="og:image" content="/static/images/og-image.jpg" />

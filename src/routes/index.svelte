@@ -12,7 +12,8 @@
 </script>
 
 <svelte:head>
-	<title>Jannis Paul Wicke</title>
+	<title>Jannis Paul Wicke – Webflow Websites</title>
+	<meta name="description" content="Bold websites that simply work."/>
 </svelte:head>
 
 <Hero />
