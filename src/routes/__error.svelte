@@ -19,6 +19,9 @@
 
         <h1>{status}</h1>
         <p>{message}</p>
+        {#if status === 404}
+            <p>This page doesn’t exist anymore.</p>
+        {/if}
     </div>
         <Contact tagline="Please let me know"></Contact>
 </section>
@@ -33,5 +36,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
     }
 </style>

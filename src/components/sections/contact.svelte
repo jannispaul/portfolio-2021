@@ -44,7 +44,7 @@
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			min-height: 40vh;
+			min-height: 30vh;
 			padding-bottom: 8rem;
 		}
 		.contact-headline {
