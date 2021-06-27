@@ -1,5 +1,8 @@
+<script>	
+	export let tagline = "Are you ready?";
+</script>
 <section id="contact">
-	<h2 class="contact-headline">Are you ready?</h2>
+	<h2 class="contact-headline">{tagline}</h2>
 	<a href="mailto:hi@paul-wicke.de" class="contact-link" data-text="hi@paul-wicke.de">
 		hi@paul-wicke.de
 		<span class="outer" aria-hidden="true">

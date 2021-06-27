@@ -156,14 +156,31 @@
 		color: var(--color-white);
 		position: absolute;
 	} */
+	.filter button{
+		position: relative;
+	}
 	.filter button:not(:last-of-type) {
 		margin-right: 1rem;
 	}
-	.filter button.active::after {
-		content: '*';
-		color: var(--color-accent);
+	.filter button::before {
+		content: '';
 		position: absolute;
+		bottom: -0.1rem;
+		width: 100%;
+		left: 0;
+		background: var(--color-white);
+		height: 0.1rem;
+		visibility: hidden;
+		transform: scaleX(0);
+		transition: transform 200ms cubic-bezier(0.54, 0.17, 0.23, 0.97);
 	}
+	.filter button.active::before, 
+	.filter button:hover::before, 
+	.filter button:focus::before{
+		visibility: visible;
+		transform: scaleX(1);
+	}
+
 	/* .hover div:first-of-type p::after,
 	.active div:first-of-type p::after {
 		content: '*';

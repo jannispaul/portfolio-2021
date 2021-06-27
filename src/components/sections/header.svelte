@@ -31,7 +31,7 @@
 		position: relative;
 	}
 	nav > a::before {
-		content: ' ';
+		content: '';
 		position: absolute;
 		bottom: -0.1rem;
 		width: 100%;
@@ -40,7 +40,7 @@
 		height: 0.1rem;
 		visibility: hidden;
 		transform: scaleX(0);
-		transition: all 200ms cubic-bezier(0.54, 0.17, 0.23, 0.97);
+		transition: transform 200ms cubic-bezier(0.54, 0.17, 0.23, 0.97);
 	}
 	nav > a:hover::before,
 	nav > a:focus::before,

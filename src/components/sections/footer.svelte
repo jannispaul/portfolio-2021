@@ -17,8 +17,8 @@
 		display: flex;
 		justify-content: space-between;
 		border-top: 1px solid var(--color-white);
-		padding-top: 1rem;
-		padding-bottom: 1rem;
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
 	}
 	@media (min-width: 769px) {
 		footer {

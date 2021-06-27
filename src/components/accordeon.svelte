@@ -87,7 +87,7 @@
 	}
 
 	.answer {
-		margin: 0.5rem 0 0 0;
+		margin: 0 0 1.5rem 0;
 		color: white;
 		max-width: 30rem;
 	}
@@ -126,7 +126,7 @@
 
 		.answer {
 			font-size: 1.33rem;
-			margin: 2rem 0 0 4rem;
+			margin: 0 0 2rem 4rem;
 		}
 	}
 </style>

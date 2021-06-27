@@ -61,6 +61,7 @@
 			grid-column: 2;
 		}
 		.copy-underline {
+			width: 22rem;
 			position: absolute;
 			bottom: 1.6rem;
 			left: 9rem;

@@ -59,8 +59,19 @@
 		margin: 5rem auto 0;
 		padding: var(--side-padding);
 	}
+		h1 {
+		font-size: 1.8rem;
+		margin-bottom: 2rem;
+	}
+	p {
+		margin-bottom: 3rem;
+	}
+	figure {
+		margin-bottom: 3rem;
+	}
 	img {
 		width: 100%;
+		margin-bottom: 0.5rem;
 	}
 
 	.project-link {
@@ -70,7 +81,7 @@
 		align-items: center;
 		text-transform: uppercase;
 		text-decoration: none;
-		padding: 1rem 0;
+		padding: 2rem 0;
 		border-top: 0.1rem solid var(--color-white);
 	}
 	.project-link path {
@@ -80,17 +91,7 @@
 	.project-link:hover path {
 		fill: var(--color-white);
 	}
-	h1 {
-		font-size: 1.8rem;
-		margin-bottom: 2rem;
-	}
-	p {
-		/* font-size: 0.88rem; */
-		margin-bottom: 3rem;
-	}
-	figure {
-		margin-bottom: 3rem;
-	}
+
 
 	@media (min-width: 768px) {
 		h1 {

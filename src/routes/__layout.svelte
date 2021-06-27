@@ -6,6 +6,7 @@
 
 	// Code from: https://svelte.dev/tutorial/spring
 	import { spring } from 'svelte/motion';
+import { onMount } from 'svelte';
 
 	let coords = spring(
 		{ x: 50, y: 50 },
@@ -17,6 +18,7 @@
 
 	let size = spring(10);
 	// let y;
+
 </script>
 
 <svelte:head>
