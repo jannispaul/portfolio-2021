@@ -1,3 +1,6 @@
+<script context="module">
+	export const prerender = true;
+</script>
 <script>
 	import underline from '/static/images/hero-underline.svg';
 </script>
