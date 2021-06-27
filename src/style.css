@@ -39,7 +39,7 @@ Minimal browser reset
 	font-family: 'Space Grotesk', sans-serif;
 	/* font-size: 5vw; */
 	font-size: clamp(16px, 5vw, 23px);
-	/* scroll-behavior: smooth; */
+	scroll-behavior: smooth;
 	line-height: 1.3;
 }
 

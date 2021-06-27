@@ -1,6 +1,6 @@
-<!-- <script context="module">
+<script context="module">
 	export const prerender = true;
-</script> -->
+</script>
 <script>
 	import joinPolitics from '/static/images/joinpolitics.jpg';
 	import joinPolitics2 from '/static/images/joinpolitics 2.jpg';
