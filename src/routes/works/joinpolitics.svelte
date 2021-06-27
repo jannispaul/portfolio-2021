@@ -18,11 +18,11 @@
 		continue to work with them today.
 	</p>
 	<figure>
-		<img src={joinPolitics} alt="Screenshot of joinpolitics website header" class="thumbnail" />
+		<img src={joinPolitics} width="1814" height="954" alt="Screenshot of joinpolitics website header" class="thumbnail" />
 		<figcaption>Header in vibrant brand colors.</figcaption>
 	</figure>
 	<figure>
-		<img src={joinPolitics2} alt="Screenshot of slider on joinpolitics website" class="thumbnail" />
+		<img src={joinPolitics2} width="1352" height="932" alt="Screenshot of slider on joinpolitics website" class="thumbnail" />
 		<figcaption>Custom slider with webflow CMS items.</figcaption>
 	</figure>
 	<h2>The Results</h2>
@@ -70,6 +70,7 @@
 	}
 	img {
 		width: 100%;
+		height: auto;
 		margin-bottom: 0.5rem;
 	}
 

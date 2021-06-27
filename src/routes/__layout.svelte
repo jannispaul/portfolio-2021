@@ -30,10 +30,10 @@
 		href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap"
 		rel="stylesheet"
 	/>
-
 	<meta name="theme-color" content="#333333" />
+	<meta name="description" content="Bold websites that simply work."/>
 	<!-- <link rel="sitemap" type="application/xml" href="/sitemap.xml" /> -->
-	<link rel="canonical" href="https://paul-wicke.de.com" />
+	<!-- <link rel="canonical" href="https://paul-wicke.de" /> -->
 	<meta property="og:image" content="/static/images/og-image.jpg" />
 	<meta property="og:image:type" content="image/jpeg" />
 	<meta property="og:image:width" content="1600" />

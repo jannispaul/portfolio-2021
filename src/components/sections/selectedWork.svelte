@@ -7,7 +7,7 @@
 	<div class="selected-work-container">
 		<h2>Selected Work</h2>
 		<a href="/works/joinpolitics" class="project" sveltekit:scroll>
-			<img src={joinPolitics} alt="Screenshot of joinpolitics website" class="thumbnail" />
+			<img src={joinPolitics} width="1814" height="954" alt="Screenshot of joinpolitics website" class="thumbnail" />
 			<div class="project-copy">
 				<svg
 					width="52"
@@ -37,6 +37,7 @@
 		padding-bottom: 6rem;
 	}
 	.project img {
+		height: auto;
 		max-width: 100%;
 		margin-bottom: 1rem;
 	}

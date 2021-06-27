@@ -15,7 +15,7 @@
 				<img src={copyUnderline} alt="decorative line" class="copy-underline desktop-only" />
 			</p>
 			<div class="profile-container">
-				<img src={profile} alt="Portrait of a young man" class="profile-image" />
+				<img src={profile} width="100" height="100" alt="Portrait of a young man" class="profile-image" />
 				<div class="profile-text">
 					<p class="profile-name">Jannis Paul Wicke</p>
 					<p>Consulting: 100€/hour</p>
@@ -39,6 +39,7 @@
 		margin-top: 1rem;
 	}
 	.profile-image {
+		height: auto;
 		width: 3.75rem;
 		border-radius: 50%;
 		margin-right: 1rem;
