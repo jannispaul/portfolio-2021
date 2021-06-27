@@ -16,9 +16,6 @@
 		display: flex;
 		align-items: flex-end;
 		margin-bottom: 5rem;
-		/* padding-top: calc(90vh - 22ch); */
-		/* margin: 0 auto 5rem;
-		max-width: var(--max-width); */
 		pointer-events: none;
 	}
 	@media (min-width: 769px) {
@@ -28,10 +25,6 @@
 		.hero-content {
 			width: 100%;
 			max-width: var(--max-width);
-			/* margin: auto; */
-		}
-		.anchor-links > a {
-			margin-right: 1rem;
 		}
 		.underline {
 			position: absolute;

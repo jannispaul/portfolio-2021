@@ -1,7 +1,6 @@
 <!-- <script context="module">
 	export const prerender = true;
 </script> -->
-
 <script>
 	import joinPolitics from '/static/images/joinpolitics.jpg';
 	import joinPolitics2 from '/static/images/joinpolitics 2.jpg';
@@ -59,7 +58,7 @@
 		margin: 5rem auto 0;
 		padding: var(--side-padding);
 	}
-		h1 {
+	h1 {
 		font-size: 1.8rem;
 		margin-bottom: 2rem;
 	}
@@ -91,7 +90,6 @@
 	.project-link:hover path {
 		fill: var(--color-white);
 	}
-
 
 	@media (min-width: 768px) {
 		h1 {

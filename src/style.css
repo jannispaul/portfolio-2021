@@ -111,48 +111,49 @@ footer {
 .blur {
 	--size: 25rem;
 	position: fixed;
+	z-index: 0;
 	will-change: transform;
 	transform-style: preserve-3d;
-	top: calc(var(--size) / 3);
-	right: auto;
-	bottom: auto;
-	left: calc(var(--size) / -1);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	border-radius: var(--size);
-	/* background: #ff5c00; */
 	background-image: linear-gradient(-30deg, #ff5c00 42%, #aa48ff 51%, #0038ff 93%);
-	width: var(--size);
-	height: var(--size);
-
 	filter: blur(calc(var(--size) / 5));
-	z-index: 0;
 	pointer-events: none;
 	will-change: transform;
 	transform-style: preserve-3d;
+	top: calc(var(--size) * -0.5);
+	left: auto;
+	bottom: auto;
+	right: calc(var(--size) * -0.5);
+
+	width: var(--size);
+	height: var(--size);
 }
 .second {
-	--size: 25rem;
+	--size: 20rem;
 	background: #0038ff;
 	background-image: linear-gradient(60deg, #ff5c00 42%, #aa48ff 51%, #0038ff 73%);
-	top: calc(var(--size) / -1.2);
-	right: calc(var(--size) / 2);
-	bottom: auto;
+	bottom: calc(var(--size) / 2);
+	right: calc(var(--size) / -1.2);
+	top: auto;
 	left: auto;
 	width: var(--size);
 	height: var(--size);
+	filter: blur(calc(var(--size) / 5));
 }
 .third {
-	--size: 18rem;
+	--size: 35rem;
 	background: #ff5c00;
 	background-image: linear-gradient(80deg, #ff5c00 22%, #aa48ff 41%, #0038ff 93%);
-	top: calc(var(--size) / -4);
-	right: calc(var(--size) / 2);
+	top: calc(var(--size) / 1.4);
+	left: calc(var(--size) / -1.2);
 	bottom: auto;
-	left: auto;
+	right: auto;
 	width: var(--size);
 	height: var(--size);
+	filter: blur(calc(var(--size) / 8));
 }
 /* Noise layer */
 .noise {
@@ -207,6 +208,35 @@ footer {
 	}
 	.desktop-only {
 		display: block;
+	}
+
+	/* Background blur effect */
+	.blur {
+		--size: 25rem;
+		top: calc(var(--size) / 3);
+		right: auto;
+		bottom: auto;
+		left: calc(var(--size) / -1);
+		width: var(--size);
+		height: var(--size);
+	}
+	.second {
+		--size: 25rem;
+		top: calc(var(--size) / -1.2);
+		right: calc(var(--size) / 2);
+		bottom: auto;
+		left: auto;
+		width: var(--size);
+		height: var(--size);
+	}
+	.third {
+		--size: 18rem;
+		top: calc(var(--size) / -4);
+		right: calc(var(--size) / 2);
+		bottom: auto;
+		left: auto;
+		width: var(--size);
+		height: var(--size);
 	}
 }
 @media (min-width: 1920px) {

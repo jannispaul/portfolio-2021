@@ -6,7 +6,6 @@
 
 	// Code from: https://svelte.dev/tutorial/spring
 	import { spring } from 'svelte/motion';
-import { onMount } from 'svelte';
 
 	let coords = spring(
 		{ x: 50, y: 50 },
@@ -17,8 +16,8 @@ import { onMount } from 'svelte';
 	);
 
 	let size = spring(10);
-	// let y;
-
+	// Viewport width: only enable background animation at >768px 
+	let clientWidth;
 </script>
 
 <svelte:head>
@@ -39,48 +38,46 @@ import { onMount } from 'svelte';
 	<meta property="og:image:type" content="image/jpeg" />
 	<meta property="og:image:width" content="1600" />
 	<meta property="og:image:height" content="900" />
-	<meta
-		property="og:image:alt"
-		content="Bold websites that simply work type on dark background"
-	/>
+	<meta property="og:image:alt" content="Bold websites that simply work type on dark background" />
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://musikversicherung.com/" />
-	<meta property="og:title" content="Deine Versicherung für Instrumente und Equipment" />
+	<meta property="og:url" content="https://paul-wicke.de/" />
+	<meta property="og:title" content="Bold websites that simply work" />
 
-	<meta property="og:description" content="" />
-	<meta property="og:image" content="/social-image.jpg" />
+	<meta property="og:description" content="Bold websites that simply work" />
+	<meta property="og:image" content="/static/images/og-image.jpg" />
 
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image" />
-	<meta property="twitter:url" content="https://musikversicherung.com/" />
-	<meta property="twitter:title" content="Deine Versicherung für Instrumente und Equipment" />
+	<meta property="twitter:url" content="https://paul-wicke.de/" />
+	<meta property="twitter:title" content="Bold websites that simply work" />
 	<meta
 		property="twitter:description"
-		content="SINFONIMA-Instrumentenversicherung & I'M
-    SOUND-Equipmentversicherung - bester Allgefahrenschutz für klassische
-    Instrumente und elektronisches Equipment"
+		content="Bold websites that simply work"
 	/>
-	<meta property="twitter:image" content="/social-image.jpg" />
+	<meta property="twitter:image" content="/static/images/og-image.jpg" />
 </svelte:head>
+<svelte:window bind:innerWidth={clientWidth}/>
 <div
 	on:mousemove={(e) => coords.set({ x: e.clientX, y: e.clientY })}
 	on:mousedown={() => size.set(30)}
 	on:mouseup={() => size.set(10)}
-	on:scroll={() => coords.set({ x: coords.x, y: coords.y + y })}
 >
 	<Header />
 	<main>
 		<slot />
 	</main>
 	<!-- <Background /> -->
-	<div class="blur" style="transform: translate3d({$coords.x / 3}px, {$coords.y/3}px, 0px);" />
+	<div class="blur" style="transform: translate3d({clientWidth > 800 ? ($coords.x / 3) : 0}px, {clientWidth > 768 ? ($coords.y / 3) : 0}px, 0px);" />
 	<div
 		class="blur second"
-		style="transform: translate3d({$coords.x / 2}px, {$coords.y / 2}px, 0px);"
+		style="transform: translate3d({clientWidth > 768 ? ($coords.x / 2) : 0}px, {clientWidth > 768 ? ($coords.y / 2) : 0}px, 0px);"
 	/>
-	<div class="blur third" style="transform: translate3d({$coords.x / 2}px, {$coords.y/1.5}px, 0px);" />
+	<div
+		class="blur third"
+		style="transform: translate3d({clientWidth > 768 ? ($coords.x / 2) : 0}px, {clientWidth > 768 ? ($coords.y / 1.5) : 0}px, 0px);"
+	/>
 	<Footer />
 	<div class="noise" />
 </div>

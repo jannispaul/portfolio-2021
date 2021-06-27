@@ -54,7 +54,7 @@
 			{#each filteredProjects as project}
 				{#if !project.hidden}
 					<button
-						disabled={(!project.link && !project.description ? true : false)}
+						disabled={!project.link && !project.description ? true : false}
 						class="row {(project.link && 'clickable') ||
 							(project.description && 'clickable')} {project.active && 'active'}"
 						data-name={project.type}
@@ -115,7 +115,7 @@
 		display: flex;
 		justify-content: space-between;
 	}
-	button:disabled{
+	button:disabled {
 		pointer-events: none;
 	}
 	button.row {
@@ -156,7 +156,7 @@
 		color: var(--color-white);
 		position: absolute;
 	} */
-	.filter button{
+	.filter button {
 		position: relative;
 	}
 	.filter button:not(:last-of-type) {
@@ -174,9 +174,9 @@
 		transform: scaleX(0);
 		transition: transform 200ms cubic-bezier(0.54, 0.17, 0.23, 0.97);
 	}
-	.filter button.active::before, 
-	.filter button:hover::before, 
-	.filter button:focus::before{
+	.filter button.active::before,
+	.filter button:hover::before,
+	.filter button:focus::before {
 		visibility: visible;
 		transform: scaleX(1);
 	}
