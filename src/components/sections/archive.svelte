@@ -1,10 +1,10 @@
 <script>
 	import { slide } from 'svelte/transition';
 	import projectsConstant from '/src/data/projects.json';
-	
+
 	// Create projects variable (that is not a constant) and add an id to each element
-	let projects = projectsConstant.map((project,i) => ({...project, id: i}));
-	// Create array filteredProjects to apply filters to 
+	let projects = projectsConstant.map((project, i) => ({ ...project, id: i }));
+	// Create array filteredProjects to apply filters to
 	$: filteredProjects = projects;
 	// Create variable that stores the active filter
 	let activeFilter;
@@ -20,28 +20,45 @@
 		});
 	};
 
-	// Filter filteredProjects by type value  
+	// Filter filteredProjects by type value
 	const filter = (type) => {
 		activeFilter = type;
-		filteredProjects = projects.filter(project => type === "all" || project.type === type);
-	}
-	filter("all");
+		filteredProjects = projects.filter((project) => type === 'all' || project.type === type);
+	};
+	filter('all');
 </script>
 
 <section id="archive">
 	<div class="archive-container">
 		<div class="table">
 			<div class="table-header">
-			<h2>Archive</h2>
+				<h2>Archive</h2>
 				<div class="filter">
-					<button data-name="all" class="{activeFilter ==="all" && "active"}" on:click={() => filter("all")}>All</button>
-					<button data-name="projects" class="{activeFilter ==="projects" && "active"}" on:click={() => filter("projects")}>Projects</button>
-					<button data-name="education" class="{activeFilter ==="education" && "active"}" on:click={() => filter("education")}>Education</button>
+					<button
+						data-name="all"
+						class={activeFilter === 'all' && 'active'}
+						on:click={() => filter('all')}>All</button
+					>
+					<button
+						data-name="projects"
+						class={activeFilter === 'projects' && 'active'}
+						on:click={() => filter('projects')}>Projects</button
+					>
+					<button
+						data-name="education"
+						class={activeFilter === 'education' && 'active'}
+						on:click={() => filter('education')}>Education</button
+					>
 				</div>
 			</div>
 			{#each filteredProjects as project}
 				{#if !project.hidden}
-					<div class="row {project.link && 'clickable' || (project.description && 'clickable')}" data-name={project.type} on:click={() => expand(project)}>
+					<button
+						class="row {(project.link && 'clickable') ||
+							(project.description && 'clickable')} {project.active && 'active'}"
+						data-name={project.type}
+						on:click={() => expand(project)}
+					>
 						<div class="client">
 							<p>
 								<span>{project.client}</span>
@@ -55,7 +72,7 @@
 						<div class="date desktop-only">
 							<p>{project.year}</p>
 						</div>
-					</div>
+					</button>
 					{#if (project.active && project.link) || (project.active && project.description)}
 						<div class="details" transition:slide>
 							{#if project.description}
@@ -63,7 +80,9 @@
 							{/if}
 							{#if project.link}
 								<p class="project-link">
-									<a href={project.link} target="_blank" rel="noopener noreferrer">{project.linkText}</a>
+									<a href={project.link} target="_blank" rel="noopener noreferrer"
+										>{project.linkText}</a
+									>
 								</p>
 							{/if}
 						</div>
@@ -76,7 +95,8 @@
 
 <style>
 	/* Hidden on mobile */
-	.date, 	.filter {
+	.date,
+	.filter {
 		display: none;
 	}
 
@@ -90,16 +110,16 @@
 		margin-top: 1rem;
 		font-size: 0.89rem;
 	}
-	.table-header{
+	.table-header {
 		display: flex;
 		justify-content: space-between;
 	}
-	.row {
-		display: grid;
-		grid-template-columns: 1fr 1.1fr;
+	button.row {
+		width: 100%;
 		border-top: 1px solid var(--color-white);
-		padding: 1rem 0;
+		padding: 1.5rem 0;
 		align-items: center;
+		text-align: left;
 	}
 
 	.details {
@@ -114,14 +134,16 @@
 		background-position: top left;
 		background-size: calc(1px * 10) 1px;
 		background-repeat: repeat-x;
-		padding: 1rem 0;
+		padding: 1.5rem 0;
 	}
 
 	.row > div:last-of-type:not(:first-of-type) {
 		text-align: right;
 	}
 
-	.clickable:hover {
+	.clickable:hover,
+	.clickable:focus,
+	.clickable.active {
 		font-style: italic;
 		cursor: pointer;
 	}
@@ -130,29 +152,35 @@
 		color: var(--color-white);
 		position: absolute;
 	} */
-	button:not(:last-of-type){
+	.filter button:not(:last-of-type) {
 		margin-right: 1rem;
 	}
-	button.active::after {
+	.filter button.active::after {
 		content: '*';
 		color: var(--color-accent);
 		position: absolute;
 	}
-	.hover div:first-of-type p::after,
+	/* .hover div:first-of-type p::after,
 	.active div:first-of-type p::after {
 		content: '*';
 		color: var(--color-accent);
 		position: absolute;
+	} */
+	.project-description {
+		margin-bottom: 1rem;
 	}
 
 	@media (min-width: 769px) {
 		.table {
 			font-size: 1rem;
+			display: grid;
 		}
-		.filter, .date{
+		.filter,
+		.date {
 			display: block;
 		}
-		.row {
+		button.row {
+			display: grid;
 			grid-template-columns: 2.3fr 3fr 1fr;
 		}
 		.details {
@@ -161,6 +189,11 @@
 		}
 		.project-link {
 			margin-top: 0;
+		}
+		.project-link:hover,
+		.project-link:active,
+		.project-link:focus {
+			text-decoration: underline;
 		}
 		.project-description {
 			grid-column: 2/4;

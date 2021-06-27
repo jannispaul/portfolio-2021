@@ -22,8 +22,7 @@
 	}
 	@media (min-width: 769px) {
 		footer {
-		margin-bottom: 2rem;
+			margin-bottom: 2rem;
 		}
 	}
-	
 </style>

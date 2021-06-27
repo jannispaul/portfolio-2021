@@ -1,7 +1,22 @@
 <script>
+	import Background from '/src/components/background.svelte';
 	import Header from '/src/components/sections/header.svelte';
 	import Footer from '/src/components/sections/footer.svelte';
 	import '../style.css';
+
+	// Code from: https://svelte.dev/tutorial/spring
+	import { spring } from 'svelte/motion';
+
+	let coords = spring(
+		{ x: 50, y: 50 },
+		{
+			stiffness: 0.01,
+			damping: 0.6
+		}
+	);
+
+	let size = spring(10);
+	// let y;
 </script>
 
 <svelte:head>
@@ -47,8 +62,23 @@
 	/>
 	<meta property="twitter:image" content="/social-image.jpg" />
 </svelte:head>
-<Header />
-<main>
-	<slot />
-</main>
-<Footer />
+<div
+	on:mousemove={(e) => coords.set({ x: e.clientX, y: e.clientY })}
+	on:mousedown={() => size.set(30)}
+	on:mouseup={() => size.set(10)}
+	on:scroll={() => coords.set({ x: coords.x, y: coords.y + y })}
+>
+	<Header />
+	<main>
+		<slot />
+	</main>
+	<!-- <Background /> -->
+	<div class="blur" style="transform: translate3d({$coords.x / 3}px, {$coords.y}px, 0px);" />
+	<div
+		class="blur second"
+		style="transform: translate3d({$coords.x / 2}px, {$coords.y / 2}px, 0px);"
+	/>
+	<div class="blur third" style="transform: translate3d({$coords.x / 2}px, {$coords.y}px, 0px);" />
+	<Footer />
+	<div class="noise" />
+</div>

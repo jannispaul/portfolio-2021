@@ -2,10 +2,7 @@
 </script>
 
 <header>
-	<a href="/">
-		<!-- <img src={logo} alt="SvelteKit" /> -->
-		Jannis Paul Wicke
-	</a>
+	<a href="/"> Jannis Paul Wicke </a>
 	<nav>
 		<a href="#about">About</a>
 		<a href="#selected-work">Selected Work</a>
@@ -13,7 +10,6 @@
 		<a href="#contact">Contact</a>
 		<a href="#archive">Archive</a>
 	</nav>
-
 </header>
 
 <style>
@@ -31,25 +27,27 @@
 	nav > a:not(:last-of-type) {
 		margin-right: 1rem;
 	}
-	nav > a{
+	nav > a {
 		position: relative;
 	}
-	nav > a::before{
-		content: " ";
+	nav > a::before {
+		content: ' ';
 		position: absolute;
 		bottom: -0.1rem;
 		width: 100%;
-		left:0;
+		left: 0;
 		background: var(--color-white);
 		height: 0.1rem;
-		  visibility: hidden;
-        transform: scaleX(0);
-        transition: all 200ms cubic-bezier(.54,.17,.23,.97); 
+		visibility: hidden;
+		transform: scaleX(0);
+		transition: all 200ms cubic-bezier(0.54, 0.17, 0.23, 0.97);
 	}
-		nav > a:hover::before{
-			visibility: visible;
- 			transform: scaleX(1);
-		}
+	nav > a:hover::before,
+	nav > a:focus::before,
+	nav > a:active::before {
+		visibility: visible;
+		transform: scaleX(1);
+	}
 	@media (min-width: 769px) {
 		header {
 			padding: 4rem;

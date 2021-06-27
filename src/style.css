@@ -32,7 +32,7 @@ Minimal browser reset
 	--color-accent: red;
 	--side-padding: 1.5rem;
 	--max-width: 1920px;
-	background: var(--color-bg);
+
 	color: var(--color-white);
 	font-family: 'Space Grotesk', sans-serif;
 	/* font-size: 5vw; */
@@ -41,7 +41,8 @@ Minimal browser reset
 	line-height: 1.3;
 }
 small,
-.small {
+.small,
+figcaption {
 	font-size: 0.875rem;
 }
 
@@ -83,10 +84,76 @@ a {
 	text-decoration: none;
 	color: var(--color-white);
 }
-
+#svelte {
+	position: relative;
+	background: var(--color-bg);
+	overflow: hidden;
+}
 /* section {
 	padding: var(--side-padding);
 } */
+
+/* 
+Dynamic background styles 
+All elements in _layout.svelte
+*/
+/* Setting all main elements on page to be higher than the gradients  */
+header,
+main,
+footer {
+	position: relative;
+	z-index: 1;
+}
+.blur {
+	--size: 25rem;
+	position: fixed;
+	will-change: transform;
+	transform-style: preserve-3d;
+	top: calc(var(--size) / -2);
+	right: auto;
+	bottom: auto;
+	left: calc(var(--size) / -1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: var(--size);
+	/* background-image: linear-gradient(132deg, #ff5c00 32%, #ff4848 51%, #6248ff 73%); */
+	background: #ff5c00;
+	width: var(--size);
+	height: var(--size);
+	-webkit-filter: blur(calc(var(--size) / 4));
+	filter: blur(calc(var(--size) / 4));
+	z-index: 0;
+	pointer-events: none;
+	will-change: transform;
+	transform-style: preserve-3d;
+}
+.second {
+	background: #0038ff;
+	top: calc(var(--size) / -1.2);
+	right: calc(var(--size) / 2);
+	bottom: auto;
+	left: auto;
+}
+.third {
+	background: #ff5c00;
+	top: calc(var(--size) / -1.5);
+	right: calc(var(--size) / -3);
+	bottom: auto;
+	left: auto;
+}
+/* Noise layer */
+.noise {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: url('https://camo.githubusercontent.com/3524dcc6007ae4b530d9364e7c4b09965dbf68a55120debc3fa69831d067c545/687474703a2f2f692e696d6775722e636f6d2f4f45425a7338422e706e67');
+	background-size: 300px;
+	mix-blend-mode: overlay;
+}
+
 header,
 section,
 footer {

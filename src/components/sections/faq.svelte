@@ -10,8 +10,8 @@
 </section>
 
 <style>
-	section{
-				max-width: var(--max-width);
+	section {
+		max-width: var(--max-width);
 	}
 	/* section {
 		padding-top: 1rem;
