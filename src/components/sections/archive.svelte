@@ -169,7 +169,7 @@
 		width: 100%;
 		left: 0;
 		background: var(--color-white);
-		height: 0.1rem;
+		height: 0.07rem;
 		visibility: hidden;
 		transform: scaleX(0);
 		transition: transform 200ms cubic-bezier(0.54, 0.17, 0.23, 0.97);

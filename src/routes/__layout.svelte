@@ -34,14 +34,14 @@ import { onMount } from 'svelte';
 
 	<meta name="theme-color" content="#333333" />
 	<!-- <link rel="sitemap" type="application/xml" href="/sitemap.xml" /> -->
-	<link rel="canonical" href="https://musikversicherung.com" />
-	<meta property="og:image" content="https://musikversicherung.com/static/social-image.jpg" />
+	<link rel="canonical" href="https://paul-wicke.de.com" />
+	<meta property="og:image" content="/static/images/og-image.jpg" />
 	<meta property="og:image:type" content="image/jpeg" />
 	<meta property="og:image:width" content="1600" />
 	<meta property="og:image:height" content="900" />
 	<meta
 		property="og:image:alt"
-		content="Deine Versicherung für Instrumente und Equipment-Schriftzug vor Stagepiano im Hintergrund"
+		content="Bold websites that simply work type on dark background"
 	/>
 
 	<!-- Open Graph / Facebook -->
@@ -75,12 +75,12 @@ import { onMount } from 'svelte';
 		<slot />
 	</main>
 	<!-- <Background /> -->
-	<div class="blur" style="transform: translate3d({$coords.x / 3}px, {$coords.y}px, 0px);" />
+	<div class="blur" style="transform: translate3d({$coords.x / 3}px, {$coords.y/3}px, 0px);" />
 	<div
 		class="blur second"
 		style="transform: translate3d({$coords.x / 2}px, {$coords.y / 2}px, 0px);"
 	/>
-	<div class="blur third" style="transform: translate3d({$coords.x / 2}px, {$coords.y}px, 0px);" />
+	<div class="blur third" style="transform: translate3d({$coords.x / 2}px, {$coords.y/1.5}px, 0px);" />
 	<Footer />
 	<div class="noise" />
 </div>

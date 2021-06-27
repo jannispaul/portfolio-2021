@@ -113,7 +113,7 @@ footer {
 	position: fixed;
 	will-change: transform;
 	transform-style: preserve-3d;
-	top: calc(var(--size) / -2);
+	top: calc(var(--size) / 3);
 	right: auto;
 	bottom: auto;
 	left: calc(var(--size) / -1);
@@ -147,7 +147,7 @@ footer {
 	--size: 18rem;
 	background: #ff5c00;
 	background-image: linear-gradient(80deg, #ff5c00 22%, #aa48ff 41%, #0038ff 93%);
-	top: calc(var(--size) / -2);
+	top: calc(var(--size) / -4);
 	right: calc(var(--size) / 2);
 	bottom: auto;
 	left: auto;

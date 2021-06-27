@@ -6,7 +6,7 @@
 	<div class="hero-content">
 		<h1>Bold websites that simply work</h1>
 	</div>
-	<img src={underline} alt="" class="underline desktop-only" />
+	<img src={underline} alt="decorative underline" class="underline desktop-only" />
 </section>
 
 <style>
