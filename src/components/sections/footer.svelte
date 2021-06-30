@@ -10,7 +10,7 @@
 		padding: 0 var(--side-padding);
 		margin-bottom: 1rem;
 	}
-	a:hover{
+	a:hover {
 		text-decoration: underline;
 	}
 	.footer-container {

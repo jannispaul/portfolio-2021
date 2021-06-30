@@ -5,7 +5,7 @@
 
 	// Code from Svelte Docs: https://svelte.dev/tutorial/spring
 	import { spring } from 'svelte/motion';
-	
+
 	// Svelte animation function that smoothes animation
 	let coords = spring(
 		{ x: 50, y: 50 },

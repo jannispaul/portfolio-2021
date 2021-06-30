@@ -28,7 +28,6 @@
 	filter('all');
 </script>
 
-
 <section id="archive">
 	<div class="archive-container">
 		<div class="table">
@@ -109,7 +108,6 @@
 	.filter {
 		display: none;
 	}
-
 
 	.archive-container {
 		width: 100%;

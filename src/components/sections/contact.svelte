@@ -39,7 +39,7 @@
 	.outer {
 		display: none;
 	}
-/* Responsive styles */
+	/* Responsive styles */
 	@media (min-width: 769px) {
 		section {
 			display: flex;

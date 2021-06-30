@@ -34,7 +34,7 @@
 		stroke-width: 1;
 		stroke-dasharray: 1000;
 		stroke-dashoffset: 1000;
-		animation: drawLine 2s 1s cubic-bezier(0,.63,.38,.99) forwards;
+		animation: drawLine 2s 1s cubic-bezier(0, 0.63, 0.38, 0.99) forwards;
 	}
 	@keyframes drawLine {
 		to {

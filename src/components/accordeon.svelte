@@ -79,7 +79,7 @@
 		width: 1.5rem;
 		height: 1.5rem;
 	}
-	.arrow path{
+	.arrow path {
 		stroke-width: 1;
 	}
 	.accordion-item {

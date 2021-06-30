@@ -46,15 +46,15 @@
 		transform: scaleX(1);
 	}
 	/* Logo animation */
-	.logo{
+	.logo {
 		display: flex;
 	}
-	.logo:hover .astrix{
+	.logo:hover .astrix {
 		transform: rotate(360deg);
 	}
 	.astrix {
 		display: block;
-		font-family: "Verona Serial", serif;
+		font-family: 'Verona Serial', serif;
 		font-size: 250%;
 		margin-top: -0.3rem;
 		margin-right: 0.5rem;

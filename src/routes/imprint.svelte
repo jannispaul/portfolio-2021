@@ -24,7 +24,7 @@
 		margin-top: 3rem;
 		min-height: calc(100vh - 14rem);
 	}
-	a{
+	a {
 		text-decoration: underline;
 	}
 </style>
