@@ -24,7 +24,7 @@ The project folder contains a variety of files. Most of them are configuration f
   - images: Contains all images
   - fonts: Contains all fonts
 
-Routes, layouts, and components are written as svelte files. They can contain `<script>`,`<html>`, and `<style>`-tag allowing for locally scoped styles.
+Routes, layouts, and components are written as svelte files. They can contain `<script>`,`<html>`, and `<style>`-tags and their respective languages and allow for logic in the html.
 
 ## Resources
 
