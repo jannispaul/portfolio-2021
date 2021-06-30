@@ -10,7 +10,7 @@
 <section id="selected-work">
 	<div class="selected-work-container">
 		<h2>Selected Work</h2>
-		<a href="/works/joinpolitics" class="project" sveltekit:scroll>
+		<a href="/works/joinpolitics" class="project">
 			<img
 				src={joinPolitics}
 				width="1814"

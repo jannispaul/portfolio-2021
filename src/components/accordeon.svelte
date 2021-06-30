@@ -32,7 +32,6 @@
 					<path
 						d="M41.2169 0.82337L41.0421 0.64826L40.8652 0.821261L38.1452 3.48126L37.9646 3.65792L38.1431 3.83668L57.1369 22.85L0.999999 22.85L0.749999 22.85L0.749999 23.1L0.749999 26.9L0.749999 27.15L0.999999 27.15L57.1373 27.15L38.143 46.1834L37.964 46.3628L38.1459 46.5394L40.8659 49.1794L41.0428 49.3511L41.2169 49.1766L65.1769 25.1766L65.3533 25L65.1769 24.8234L41.2169 0.82337Z"
 						stroke="#FFF9F2"
-						stroke-width="2"
 					/>
 				</svg>
 				{section.question}
@@ -46,7 +45,6 @@
 					<path
 						d="M41.2169 0.82337L41.0421 0.64826L40.8652 0.821261L38.1452 3.48126L37.9646 3.65792L38.1431 3.83668L57.1369 22.85L0.999999 22.85L0.749999 22.85L0.749999 23.1L0.749999 26.9L0.749999 27.15L0.999999 27.15L57.1373 27.15L38.143 46.1834L37.964 46.3628L38.1459 46.5394L40.8659 49.1794L41.0428 49.3511L41.2169 49.1766L65.1769 25.1766L65.3533 25L65.1769 24.8234L41.2169 0.82337Z"
 						stroke="#FFF9F2"
-						stroke-width="2"
 					/>
 				</svg>
 			</button>
@@ -61,7 +59,7 @@
 
 <style>
 	.accordion {
-		border-bottom: 0.5px solid var(--color-white);
+		border-bottom: 0.1rem solid var(--color-white);
 	}
 	button {
 		text-align: left;
@@ -81,8 +79,11 @@
 		width: 1.5rem;
 		height: 1.5rem;
 	}
+	.arrow path{
+		stroke-width: 1;
+	}
 	.accordion-item {
-		border-top: 0.5px solid var(--color-white);
+		border-top: 0.1rem solid var(--color-white);
 		overflow: hidden;
 		position: relative;
 	}

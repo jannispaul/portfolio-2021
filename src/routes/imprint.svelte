@@ -4,14 +4,14 @@
 
 <section>
 	<div class="imprint-container">
-		<h1>Impressum</h1>
+		<h1>Imprint</h1>
 		<p>
 			Angaben gemäß § 5 TMG:<br />
 			Jannis Wicke<br />
 			Tempelhofer Damm 206<br />
 			12099 Berlin<br />
 			<br /><br />
-			E-Mail: hi@paul-wicke.de
+			E-Mail: <a href="mailto:hi@paul-wicke.de">hi@paul-wicke.de</a>
 			<br /><br />
 			Keine Tracking, keine Cookies
 		</p>
@@ -20,6 +20,10 @@
 
 <style>
 	section {
+		margin-top: 3rem;
 		min-height: calc(100vh - 14rem);
+	}
+	a{
+		text-decoration: underline;
 	}
 </style>

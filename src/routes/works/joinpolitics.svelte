@@ -69,12 +69,13 @@
 <style>
 	article {
 		max-width: 38rem;
-		margin: 5rem auto 0;
+		margin: 0 auto 0;
 		padding: var(--side-padding);
 	}
 	h1 {
 		font-size: 1.8rem;
 		margin-bottom: 2rem;
+		line-height: 1.1;
 	}
 	p {
 		margin-bottom: 3rem;
@@ -110,6 +111,7 @@
 		h1 {
 			font-size: 4rem;
 			margin-bottom: 3rem;
+			text-align: center;
 		}
 		p {
 			font-size: 0.88rem;

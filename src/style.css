@@ -136,7 +136,7 @@ footer {
 	left: auto;
 	width: var(--size);
 	height: var(--size);
-	filter: blur(calc(var(--size) / 5));
+	filter: blur(calc(var(--size) / 4));
 }
 .third {
 	--size: 35rem;
@@ -148,7 +148,7 @@ footer {
 	right: auto;
 	width: var(--size);
 	height: var(--size);
-	filter: blur(calc(var(--size) / 8));
+	filter: blur(calc(var(--size) / 5));
 }
 /* Noise layer */
 .noise {
