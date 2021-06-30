@@ -1,9 +1,10 @@
 <script context="module">
 	export const prerender = true;
 </script>
+
 <script>
 	import joinPolitics from '/static/images/joinpolitics.jpg';
-	import joinPolitics2 from '/static/images/joinpolitics 2.jpg';
+	import joinPolitics2 from '/static/images/joinpolitics2.jpg';
 	import Contact from '/src/components/sections/contact.svelte';
 	// import arrowRightUp from '/static/images/arrow-right-up.svg';
 </script>
@@ -13,24 +14,37 @@
 	<p>
 		JoinPolitics, a Berlin startup trying to disrupt the political scene by providing seed capital
 		for aspiring talent, needed a website to comunicate their mission. After learning more about
-		what they were looking for, I adapted existing designs and crafted original ones to build them a
-		site. Using Webflow, I implemented this project with the client’s user experience in mind, and I
-		continue to work with them today.
+		what they were looking for, I adapted and crafted original designs to build them a site. Using
+		Webflow, I implemented this project with the client’s user experience in mind, and I continue to
+		work with them today.
 	</p>
 	<figure>
-		<img src={joinPolitics} width="1814" height="954" alt="Screenshot of joinpolitics website header" class="thumbnail" />
+		<img
+			src={joinPolitics}
+			width="1814"
+			height="954"
+			alt="Joinpolitics website header"
+			class="thumbnail"
+		/>
 		<figcaption>Header in vibrant brand colors.</figcaption>
 	</figure>
 	<figure>
-		<img src={joinPolitics2} width="1352" height="932" alt="Screenshot of slider on joinpolitics website" class="thumbnail" />
+		<img
+			src={joinPolitics2}
+			width="1352"
+			height="932"
+			alt="Slider on JoinPolitics website"
+			class="thumbnail"
+		/>
 		<figcaption>Custom slider with webflow CMS items.</figcaption>
 	</figure>
 	<h2>The Results</h2>
 	<p>
 		JoinPolitics achieved their goal to establish a strong online presence. Now they have an
-		impactful website that’s fully editable and doesn’t require technical maintenance. They were
-		able to launch their blog and showcase their talent media stories on a website they take pride
-		in, one that conveys their values.
+		impactful website that’s fully editable and doesn’t require technical maintenance. <br
+			class="desktop-only"
+		/>They were able to launch their blog and showcase their talent media stories on a website they
+		take pride in, one that conveys their values.
 	</p>
 	<a href="https://www.joinpolitics.org/" class="project-link">
 		Visit joinpolitics.org

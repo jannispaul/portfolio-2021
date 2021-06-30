@@ -1,16 +1,23 @@
 <script>
 	import joinPolitics from '/static/images/joinpolitics.jpg';
 </script>
+
 <svelte:head>
 	<title>Jannis Paul Wicke – JoinPolitics Webflow Website</title>
-	<meta name="description" content="A unique webflow website with custom cms slider"/>
+	<meta name="description" content="A unique webflow website with custom cms slider" />
 </svelte:head>
 
 <section id="selected-work">
 	<div class="selected-work-container">
 		<h2>Selected Work</h2>
 		<a href="/works/joinpolitics" class="project" sveltekit:scroll>
-			<img src={joinPolitics} width="1814" height="954" alt="Screenshot of joinpolitics website" class="thumbnail" />
+			<img
+				src={joinPolitics}
+				width="1814"
+				height="954"
+				alt="Screenshot of joinpolitics website"
+				class="thumbnail"
+			/>
 			<div class="project-copy">
 				<svg
 					width="52"
