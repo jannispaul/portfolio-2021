@@ -1,4 +1,9 @@
 /** @type {import('@sveltejs/kit').Config} */
+// 3 Versions:
+// No adpater
+// Static adapter
+// Netlify adapter
+
 // const config = {
 // 	kit: {
 // 		// hydrate the <div id="svelte"> element in src/app.html

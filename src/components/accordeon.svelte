@@ -1,4 +1,4 @@
-<!-- https://svelte.dev/repl/62a22abc6f2344388254ef5f874f073e?version=3.16.0 -->
+<!-- Inspired by https://svelte.dev/repl/62a22abc6f2344388254ef5f874f073e?version=3.16.0 -->
 <script>
 	import faqJSON from '/src/data/faq.json';
 	import { slide } from 'svelte/transition';

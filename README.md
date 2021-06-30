@@ -1,43 +1,35 @@
-# Personal Website 2021 Projekt
+# Personal website project 2021
 
-Sources:
+## Installation
+
+1. Install NodeJS if not already the case: https://nodejs.org/en/
+2. Download the repository.
+3. Open a Terminal window and chose this project directory. Example: `cd /Users/username/website 2021/`
+4. Run `npm install`
+5. Run `npm run dev` to start the local developement server at localhost:3000
+6. To stop the development server, press Ctrl + c
+
+If you encounter any errors an npm version conflict could be the cause. Please contact me with the console log.
+
+## Overview
+
+The project folder contains a variety of files. Most of them are configuration files. The work for this project was mostly done in the following folders:
+
+- src: Contains all site/app data
+  - components: Contains all components
+  - data: Contains data for FAQ and archive
+  - routes: Contains all pages and layouts
+    - works: Contains the project pages
+- static: Contains all static files like fonts, images, and the favicon
+  - images: Contains all images
+  - fonts: Contains all fonts
+
+Routes, layouts, and components are written as svelte files. They can contain `<script>`,`<html>`, and `<style>`-tag allowing for locally scoped styles.
+
+## Resources
+
+https://kit.svelte.dev/docs
+https://github.com/sveltejs/kit/tree/master/packages/create-svelte
 https://sk-incognito.vercel.app/learn/assets-metadata-css
-
-# create-svelte
-
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm init svelte@next
-
-# create a new project in my-app
-npm init svelte@next my-app
-```
-
-> Note: the `@next` is temporary
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-Before creating a production version of your app, install an [adapter](https://kit.svelte.dev/docs#adapters) for your target environment. Then:
-
-```bash
-npm run build
-```
-
-> You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
+https://svelte.dev/repl/62a22abc6f2344388254ef5f874f073e?version=3.16.0
+https://developer.mozilla.org/en-US/docs/Web/HTML
