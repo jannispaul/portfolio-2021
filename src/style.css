@@ -168,8 +168,8 @@ footer {
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: url('https://camo.githubusercontent.com/3524dcc6007ae4b530d9364e7c4b09965dbf68a55120debc3fa69831d067c545/687474703a2f2f692e696d6775722e636f6d2f4f45425a7338422e706e67');
-	background-size: 300px;
+	background: url('/static/images/grain.jpg');
+	background-size: 10rem;
 	mix-blend-mode: overlay;
 }
 /* Utility classes */

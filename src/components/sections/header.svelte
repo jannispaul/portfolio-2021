@@ -1,5 +1,5 @@
 <header>
-	<a href="/"> Jannis Paul Wicke </a>
+	<a href="/" class="logo"><span class="astrix">*</span> Jannis Paul Wicke </a>
 	<nav>
 		<a href="/#about">About</a>
 		<a href="/#selected-work">Selected Work</a>
@@ -44,6 +44,23 @@
 	nav > a:active::before {
 		visibility: visible;
 		transform: scaleX(1);
+	}
+	/* Logo animation */
+	.logo{
+		display: flex;
+	}
+	.logo:hover .astrix{
+		transform: rotate(360deg);
+	}
+	.astrix {
+		display: block;
+		font-family: "Verona Serial", serif;
+		font-size: 250%;
+		margin-top: -0.3rem;
+		margin-right: 0.5rem;
+		transform-origin: 50% 27%;
+		transform: rotate(0);
+		transition: 500ms transform ease;
 	}
 	@media (min-width: 769px) {
 		header {
