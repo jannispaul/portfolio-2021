@@ -1,5 +1,6 @@
+<!-- Setting custom site info in head  -->
 <svelte:head>
-	<title>Jannis Paul Wicke</title>
+	<title>Imprint - Jannis Paul Wicke</title>
 </svelte:head>
 
 <section>

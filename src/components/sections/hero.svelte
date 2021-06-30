@@ -1,7 +1,3 @@
-<script context="module">
-	export const prerender = true;
-</script>
-
 <section>
 	<div class="hero-content">
 		<h1>Bold websites that simply work</h1>
@@ -31,7 +27,7 @@
 		margin-bottom: 5rem;
 		pointer-events: none;
 	}
-
+	/* Underline / SVG path animation  */
 	svg path {
 		fill: none;
 		stroke: var(--color-white);
@@ -40,12 +36,12 @@
 		stroke-dashoffset: 1000;
 		animation: drawLine 2s 1s cubic-bezier(0,.63,.38,.99) forwards;
 	}
-
 	@keyframes drawLine {
 		to {
 			stroke-dashoffset: 0;
 		}
 	}
+	/* Respnsive styles */
 	@media (min-width: 769px) {
 		section {
 			height: calc(100vh - 15rem);

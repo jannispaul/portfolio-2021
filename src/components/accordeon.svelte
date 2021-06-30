@@ -1,16 +1,16 @@
 <!-- https://svelte.dev/repl/62a22abc6f2344388254ef5f874f073e?version=3.16.0 -->
 <script>
+	import faqJSON from '/src/data/faq.json';
 	import { slide } from 'svelte/transition';
-	import faq from '/src/data/faq.json';
 
-	// let visible = true;
-	let sections = faq;
+	// Create editible variable from constant
+	let faqs = faqJSON;
 
 	// Set all active states to false and clicked to true
-	const expand = (section) => {
-		sections = sections.map((s) => {
+	const expand = (faq) => {
+		faqs = faqs.map((s) => {
 			s.active = false;
-			if (s.id === section.id) {
+			if (s.id === faq.id) {
 				s.active = true;
 			}
 			return s;
@@ -19,9 +19,9 @@
 </script>
 
 <div class="accordion">
-	{#each sections as section}
+	{#each faqs as faq}
 		<div class="accordion-item ">
-			<button on:click={() => expand(section)} class={section.active && 'active'}>
+			<button on:click={() => expand(faq)} class={faq.active && 'active'}>
 				<svg
 					width="66"
 					height="50"
@@ -34,7 +34,7 @@
 						stroke="#FFF9F2"
 					/>
 				</svg>
-				{section.question}
+				{faq.question}
 				<svg
 					width="66"
 					height="50"
@@ -48,9 +48,9 @@
 					/>
 				</svg>
 			</button>
-			{#if section.active}
+			{#if faq.active}
 				<div class="answer" transition:slide>
-					<p>{section.answer}</p>
+					<p>{faq.answer}</p>
 				</div>
 			{/if}
 		</div>

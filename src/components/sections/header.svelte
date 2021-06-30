@@ -1,6 +1,3 @@
-<script>
-</script>
-
 <header>
 	<a href="/"> Jannis Paul Wicke </a>
 	<nav>

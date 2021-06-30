@@ -2,11 +2,6 @@
 	import joinPolitics from '/static/images/joinpolitics.jpg';
 </script>
 
-<svelte:head>
-	<title>Jannis Paul Wicke – JoinPolitics Webflow Website</title>
-	<meta name="description" content="A unique webflow website with custom cms slider" />
-</svelte:head>
-
 <section id="selected-work">
 	<div class="selected-work-container">
 		<h2>Selected Work</h2>

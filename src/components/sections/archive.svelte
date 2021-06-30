@@ -28,6 +28,7 @@
 	filter('all');
 </script>
 
+
 <section id="archive">
 	<div class="archive-container">
 		<div class="table">
@@ -51,8 +52,13 @@
 					>
 				</div>
 			</div>
+			<!-- Looping through projects -->
 			{#each filteredProjects as project}
+				<!--Don't show if porject is set to hidden  -->
 				{#if !project.hidden}
+					<!-- Disable button if there is no link or description -->
+					<!-- Add class clickable and active dynamically -->
+					<!-- Run expand on click -->
 					<button
 						disabled={!project.link && !project.description ? true : false}
 						class="row {(project.link && 'clickable') ||
@@ -74,11 +80,14 @@
 							<p>{project.year}</p>
 						</div>
 					</button>
+					<!-- Only show project details if project is active and has details -->
 					{#if (project.active && project.link) || (project.active && project.description)}
 						<div class="details" transition:slide>
+							<!-- Only show description if defined -->
 							{#if project.description}
 								<p class="project-description">{project.description}</p>
 							{/if}
+							<!-- Only show link if defined -->
 							{#if project.link}
 								<p class="project-link">
 									<a href={project.link} target="_blank" rel="noopener noreferrer"
@@ -95,11 +104,12 @@
 </section>
 
 <style>
-	/* Hidden on mobile */
+	/* Hide on mobile */
 	.date,
 	.filter {
 		display: none;
 	}
+
 
 	.archive-container {
 		width: 100%;
@@ -141,6 +151,9 @@
 		padding: 1.5rem 0;
 	}
 
+	.project-description {
+		margin-bottom: 1rem;
+	}
 	.row > div:last-of-type:not(:first-of-type) {
 		text-align: right;
 	}
@@ -151,11 +164,8 @@
 		font-style: italic;
 		cursor: pointer;
 	}
-	/* .clickable div:first-of-type p::after {
-		content: '*';
-		color: var(--color-white);
-		position: absolute;
-	} */
+
+	/* Filter styles */
 	.filter button {
 		position: relative;
 	}
@@ -181,16 +191,7 @@
 		transform: scaleX(1);
 	}
 
-	/* .hover div:first-of-type p::after,
-	.active div:first-of-type p::after {
-		content: '*';
-		color: var(--color-accent);
-		position: absolute;
-	} */
-	.project-description {
-		margin-bottom: 1rem;
-	}
-
+	/* Repsonsive styles */
 	@media (min-width: 769px) {
 		.table {
 			font-size: 1rem;
@@ -223,8 +224,5 @@
 			grid-row: 1/2;
 			grid-column: 1/2;
 		}
-	}
-	.hidden {
-		display: none;
 	}
 </style>

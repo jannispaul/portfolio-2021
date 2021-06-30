@@ -6,8 +6,13 @@
 	import joinPolitics from '/static/images/joinpolitics.jpg';
 	import joinPolitics2 from '/static/images/joinpolitics2.jpg';
 	import Contact from '/src/components/sections/contact.svelte';
-	// import arrowRightUp from '/static/images/arrow-right-up.svg';
 </script>
+
+<!-- Set custom page info in head -->
+<svelte:head>
+	<title>JoinPolitics Webflow Website - Jannis Paul Wicke</title>
+	<meta name="description" content="A unique Webflow website with custom features and self-managemed content management system." />
+</svelte:head>
 
 <article>
 	<h1>Building a digital home for JoinPolitics</h1>
@@ -106,7 +111,7 @@
 	.project-link:hover path {
 		fill: var(--color-white);
 	}
-
+/* Responsive styles */
 	@media (min-width: 768px) {
 		h1 {
 			font-size: 4rem;

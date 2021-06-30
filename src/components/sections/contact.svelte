@@ -1,4 +1,5 @@
 <script>
+	// Prop to be pass a custom headline into the component if used in another context
 	export let tagline = 'Are you ready?';
 </script>
 
@@ -38,7 +39,7 @@
 	.outer {
 		display: none;
 	}
-
+/* Responsive styles */
 	@media (min-width: 769px) {
 		section {
 			display: flex;

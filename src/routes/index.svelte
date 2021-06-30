@@ -10,7 +10,7 @@
 	import Contact from '/src/components/sections/contact.svelte';
 	import Archive from '/src/components/sections/archive.svelte';
 </script>
-
+<!-- Setting custom site info in head -->
 <svelte:head>
 	<title>Bold websites that simply work – Jannis Wicke</title>
 	<meta name="description" content="Take your website to the next level. Custom Webflow websites, from concept to developement and beyond. " />

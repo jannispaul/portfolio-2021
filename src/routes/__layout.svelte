@@ -3,9 +3,10 @@
 	import Footer from '/src/components/sections/footer.svelte';
 	import '../style.css';
 
-	// Code from: https://svelte.dev/tutorial/spring
+	// Code from Svelte Docs: https://svelte.dev/tutorial/spring
 	import { spring } from 'svelte/motion';
-
+	
+	// Svelte animation function that smoothes animation
 	let coords = spring(
 		{ x: 50, y: 50 },
 		{
@@ -14,22 +15,21 @@
 		}
 	);
 
-	let size = spring(10);
-	// Viewport width: only enable background animation at >768px
+	// clientWdith is viewport width of client
+	// Used to only enable background animation at >768px
 	let clientWidth;
 </script>
 
+<!-- Watch inner window width and set clientWidth -->
 <svelte:window bind:innerWidth={clientWidth} />
-<div
-	on:mousemove={(e) => coords.set({ x: e.clientX, y: e.clientY })}
-	on:mousedown={() => size.set(30)}
-	on:mouseup={() => size.set(10)}
->
+
+<!-- Track mouse movement and set coordinates -->
+<div on:mousemove={(e) => coords.set({ x: e.clientX, y: e.clientY })}>
 	<Header />
 	<main>
 		<slot />
 	</main>
-	<!-- <Background /> -->
+	<!-- dynamically transform blurred gradients -->
 	<div
 		class="blur"
 		style="transform: translate3d({clientWidth > 800 ? $coords.x / 3 : 0}px, {clientWidth > 768
