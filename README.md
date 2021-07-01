@@ -3,7 +3,7 @@
 ## Installation
 
 1. Install NodeJS if not already the case: https://nodejs.org/en/
-2. Download the repository.
+2. Download this repository, if you don't have it already: https://github.com/jannispaul/website-2021/
 3. Open a Terminal window and chose this project directory. Example: `cd /Users/username/website 2021/`
 4. Run `npm install`
 5. Run `npm run dev` to start the local developement server at localhost:3000
