@@ -1,5 +1,7 @@
 # Personal website project 2021
 
+This project was created as part of the interfacedesign class. The website is built with SvelteKit and requires a developement server to be run locally. The live site can be found here: https://paul-wicke.de/ 
+
 ## Installation
 
 1. Install NodeJS if not already the case: https://nodejs.org/en/
