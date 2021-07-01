@@ -214,7 +214,10 @@ mostly setting variables and spacing
 		display: block;
 	}
 
-	/* Background blur effect */
+	/* 
+		Background blur effect 
+		.blur is template for .second and .third 
+	*/
 	.blur {
 		--size: 25rem;
 		top: calc(var(--size) / 3);
@@ -223,6 +226,7 @@ mostly setting variables and spacing
 		left: calc(var(--size) / -1);
 		width: var(--size);
 		height: var(--size);
+		will-change: transform;
 	}
 	.second {
 		--size: 25rem;
@@ -232,6 +236,7 @@ mostly setting variables and spacing
 		left: auto;
 		width: var(--size);
 		height: var(--size);
+		will-change: transform;
 	}
 	.third {
 		--size: 18rem;
@@ -241,6 +246,7 @@ mostly setting variables and spacing
 		left: auto;
 		width: var(--size);
 		height: var(--size);
+		will-change: transform;
 	}
 }
 @media (min-width: 1920px) {

@@ -21,7 +21,7 @@
 <style>
 	section {
 		position: relative;
-		min-height: calc(90vh - 4rem);
+		min-height: calc(80vh - 4rem);
 		display: flex;
 		align-items: flex-end;
 		margin-bottom: 3rem;
@@ -45,6 +45,8 @@
 	@media (min-width: 769px) {
 		section {
 			height: calc(100vh - 15rem);
+			min-height: calc(60vh - 4rem);
+			margin-bottom: 5rem;
 		}
 		.hero-content {
 			width: 100%;
