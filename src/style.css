@@ -41,7 +41,7 @@ Global base styles
 	font-family: 'Space Grotesk', sans-serif;
 	font-size: clamp(16px, 5vw, 23px);
 	line-height: 1.3;
-	scroll-behavior: smooth;
+	/* scroll-behavior: smooth; */
 }
 
 header,
