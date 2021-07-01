@@ -47,7 +47,7 @@
 		margin-bottom: 1rem;
 	}
 	.thumbnail {
-		mix-blend-mode: multiply;
+		opacity:0.8;
 		filter: saturate(0);
 		transition: filter 200ms ease;
 	}
