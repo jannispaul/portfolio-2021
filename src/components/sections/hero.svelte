@@ -21,10 +21,10 @@
 <style>
 	section {
 		position: relative;
-		min-height: calc(60vh - 4rem);
+		min-height: calc(90vh - 4rem);
 		display: flex;
 		align-items: flex-end;
-		margin-bottom: 5rem;
+		margin-bottom: 3rem;
 		pointer-events: none;
 	}
 	/* Underline / SVG path animation  */
