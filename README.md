@@ -13,18 +13,18 @@ If you encounter any errors an npm version conflict could be the cause. Please c
 
 ## Overview
 
-The project folder contains a variety of files. Most of them are configuration files. The work for this project was mostly done in the following folders:
+The project folder contains a variety of files. Many of them are configuration files. The work for this project was mostly done in the following directories:
 
-- src: Contains all site/app data
-  - components: Contains all components
-  - data: Contains data for FAQ and archive
-  - routes: Contains all pages and layouts
-    - works: Contains the project pages
-- static: Contains all static files like fonts, images, and the favicon
-  - images: Contains all images
-  - fonts: Contains all fonts
+- *src*: Contains all site/app data
+  - *components*: Contains all components
+  - *data*: Contains data for FAQ and archive
+  - *routes*: Contains all pages and layouts
+    - *works*: Contains the project pages
+- *static*: Contains all static files like fonts, images, and the favicon
+  - *images*: Contains all images
+  - *fonts*: Contains all fonts
 
-Routes, layouts, and components are written as svelte files. They can contain `<script>`,`<html>`, and `<style>`-tags and their respective languages and allow for logic in the html.
+Routes, layouts, and components are written as .svelte files. They can contain `<script>`,`<html>`, and `<style>`-tags and their respective languages and allow for logic in the html and scoped styles.
 
 ## Resources
 
