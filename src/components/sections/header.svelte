@@ -1,5 +1,5 @@
 <header>
-	<a href="/" class="logo"><span class="astrix">*</span> Jannis Paul Wicke </a>
+	<a href="/" class="logo"><span class="astrix">*</span>Jannis Paul Wicke</a>
 	<nav>
 		<a href="/#about">About</a>
 		<a href="/#selected-work">Selected Work</a>
@@ -48,6 +48,8 @@
 	/* Logo animation */
 	.logo {
 		display: flex;
+		word-break: keep-all;
+		white-space: nowrap;
 	}
 	.logo:hover .astrix {
 		transform: rotate(360deg);

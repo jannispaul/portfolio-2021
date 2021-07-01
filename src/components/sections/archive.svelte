@@ -70,7 +70,7 @@
 								<span>{project.client}</span>
 							</p>
 						</div>
-						<div class="">
+						<div class="category">
 							<p>
 								<span>{project.category}</span>
 							</p>
@@ -149,8 +149,8 @@
 		padding: 1.5rem 0;
 	}
 
-	.project-description {
-		margin-bottom: 1rem;
+	.project-link {
+		margin-top: 1rem;
 	}
 	.row > div:last-of-type:not(:first-of-type) {
 		text-align: right;
@@ -200,12 +200,21 @@
 			display: block;
 		}
 		button.row {
-			display: grid;
-			grid-template-columns: 2.3fr 3fr 1fr;
+			display: flex;
+			justify-content: space-between;
+		}
+		.client{
+			flex-basis: 30%;
+		}
+		.category{
+			flex-basis: 30%;
+		}
+		.date{
+			flex-basis: 20%;
 		}
 		.details {
 			display: grid;
-			grid-template-columns: 2.3fr 3fr 1fr;
+			grid-template-columns: 2.68fr 3fr 1fr;
 		}
 		.project-link {
 			margin-top: 0;
