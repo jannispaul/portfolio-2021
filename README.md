@@ -28,9 +28,9 @@ Routes, layouts, and components are written as svelte files. They can contain `<
 
 ## Resources
 
-https://kit.svelte.dev/docs
-https://svelte.dev/
-https://github.com/sveltejs/kit/tree/master/packages/create-svelte
-https://sk-incognito.vercel.app/learn/assets-metadata-css
-https://svelte.dev/repl/62a22abc6f2344388254ef5f874f073e?version=3.16.0
-https://developer.mozilla.org/en-US/docs/Web/HTML
+- https://kit.svelte.dev/docs
+- https://svelte.dev/
+- https://github.com/sveltejs/kit/tree/master/packages/create-svelte
+- https://sk-incognito.vercel.app/learn/assets-metadata-css
+- https://svelte.dev/repl/62a22abc6f2344388254ef5f874f073e?version=3.16.0
+- https://developer.mozilla.org/en-US/docs/Web/HTML
