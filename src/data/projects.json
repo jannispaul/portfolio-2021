@@ -217,19 +217,19 @@
 		"hidden": false
 	},
 	{
-		"client": "Mosaik App",
-		"category": "App concept & design",
-		"year": "2017",
-		"type": "projects",
-		"description": "Developed the concept and design for the social shopping app Mosaik.",
-		"hidden": false
-	},
-	{
 		"client": "Arztpraxis Schulzendorf",
 		"category": "Web design & dev",
 		"year": "2018",
 		"type": "projects",
 		"description": "Designed and developed the website for family doctor Peggy von Niederhäusern's practice.",
+		"hidden": false
+	},
+	{
+		"client": "Mosaik App",
+		"category": "App concept & design",
+		"year": "2017",
+		"type": "projects",
+		"description": "Developed the concept and design for the social shopping app Mosaik.",
 		"hidden": false
 	},
 	{
