@@ -1,18 +1,90 @@
 [
 	{
+		"client": "Forget Finance",
+		"category": "Webflow dev",
+		"year": "2021",
+		"type": "projects",
+		"link": "https://forget.finance",
+		"linkText": "forget.finance",
+		"description": "Developed the new website for fintech startup Forget.finance with Webflow.",
+		"hidden": true
+	},
+	{
+		"client": "Mission Zukunfstfonds",
+		"category": "Webflow design & dev",
+		"year": "2021",
+		"type": "projects",
+		"link": "https://www.mission-zukunftsfonds.de/",
+		"linkText": "mission-zukunftsfonds.de",
+		"description": "Designed and developed a landing page with Webflow for Mission Zukunftsfonds, a political initiative creating a fund for Germany’s future.",
+		"hidden": false
+	},
+	{
+		"client": "Media Pioneer",
+		"category": "Webflow design & dev",
+		"year": "2021",
+		"type": "projects",
+		"link": "https://expedition.thepioneer.de/",
+		"linkText": "expedition.thepioneer.de",
+		"description": "Designed and developed the landingpage for ThePioneerExpedition with Webflow.",
+		"hidden": false
+	},
+	{
+		"client": "Media Partisans",
+		"category": "Webflow design & dev",
+		"year": "2021",
+		"type": "projects",
+		"link": "http://www.partisansplus.com/",
+		"linkText": "partisansplus.com",
+		"description": "Designed and developed a landing page with Webflow for Partisans Plus, a new subbranch of the media company Media Partisans.",
+		"hidden": false
+	},
+	{
+		"client": "Media Pioneer",
+		"category": "Webflow design & dev",
+		"year": "2021",
+		"type": "projects",
+		"link": "https://support.thepioneer.de/",
+		"linkText": "support.thepioneer.de",
+		"description": "Designed and developed the landingpage to support the ThePioneer mission with Webflow.",
+		"hidden": false
+	},
+	{
+		"client": "Media Pioneer",
+		"category": "Webflow design & dev",
+		"year": "2021",
+		"type": "projects",
+		"link": "https://experience.thepioneer.de/",
+		"linkText": "experience.thepioneer.de",
+		"description": "Designed and developed the landingpage for ThePioneerExperience with Webflow.",
+		"hidden": false
+	},
+	{
+		"client": "Pioneer Foundation",
+		"category": "Webflow design & dev",
+		"year": "2021",
+		"type": "projects",
+		"link": "https://www.the-pioneer-foundation.de/",
+		"linkText": "the-pioneer-foundation.de",
+		"description": "Designed and developed the website for the political journalism foundation with Webflow.",
+		"hidden": false
+	},
+	{
+		"client": "Axel Springer Audio",
+		"category": "Webflow design & dev",
+		"year": "2020",
+		"type": "projects",
+		"link": "https://www.dam-podcast.de/",
+		"linkText": "dam-podcast.de",
+		"description": "Developed the landing page Axel Springer Audio's new Podcast Dark Audio Moments with Webflow.",
+		"hidden": false
+	},
+	{
 		"client": "THB",
 		"category": "Master Digital Media",
 		"year": "since 2020",
 		"type": "education",
 		"hidden": false
-	},
-	{
-		"client": "Stiftung Schreibwerkstatt",
-		"category": "Web design & dev",
-		"year": "2020",
-		"type": "projects",
-		"description": "Designed and developed the website for the political journalism foundation with webflow.",
-		"hidden": true
 	},
 	{
 		"client": "Bosch",
