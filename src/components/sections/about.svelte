@@ -9,8 +9,8 @@
 			<h2>About me</h2>
 			<p class="about-copy">
 				I create websites that are elegant and effective. With over a decade of experience, my
-				skills span an array of disciplines that seamlessly combine design and tech. Based in
-				Berlin, I work with people around the world. If you want a website and are looking for a
+				skills span an array of disciplines that seamlessly combine design and tech. I'm based in
+				Berlin and work with people around the world. If you want a website and are looking for a
 				smooth ride from concept to development and beyond, I’m your guy.
 				<img src={copyUnderline} alt="decorative line" class="copy-underline desktop-only" />
 			</p>
