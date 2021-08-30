@@ -203,8 +203,6 @@
 		"category": "Concept & design",
 		"year": "2018",
 		"type": "projects",
-		"linkText": "qvsta.com",
-		"link": "https://qvsta.com/",
 		"description": "Concepted and designed a component-based design-system for qvsta, a platform for talent management.",
 		"hidden": false
 	},
@@ -213,7 +211,7 @@
 		"category": "Styleguide",
 		"year": "2018",
 		"type": "projects",
-		"description": "Created a web styleguide.",
+		"description": "Worked on the web styleguide.",
 		"hidden": false
 	},
 	{
