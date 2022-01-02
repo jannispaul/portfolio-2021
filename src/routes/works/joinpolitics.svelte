@@ -3,8 +3,8 @@
 </script>
 
 <script>
-	import joinPolitics from '/images/joinpolitics.jpg';
-	import joinPolitics2 from '/images/joinpolitics2.jpg';
+	import joinPolitics from '/static/images/joinpolitics.jpg';
+	import joinPolitics2 from '/static/images/joinpolitics2.jpg';
 	import Contact from '/src/components/sections/contact.svelte';
 </script>
 
