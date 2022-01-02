@@ -1,5 +1,43 @@
 [
 	{
+		"client": "Axel Springer Audio",
+		"category": "Webflow design & dev",
+		"year": "2021",
+		"type": "projects",
+		"link": "https://www.wettlauf-der-koenige.de/",
+		"linkText": "wettlauf-der-könige.de",
+		"description": "Developed the landing page for Axel Springer Audio's new podcast Wettlauf der Könige with Webflow.",
+		"hidden": true
+	},
+	{
+		"client": "Feinarbyte",
+		"category": "Webflow design & dev",
+		"year": "2021",
+		"type": "projects",
+		"link": "https://about.unmasked.poker/",
+		"linkText": "unmasked.poker",
+		"description": "Designed the landing page for play money only online poker plattform Unsmaked Poker with Webflow.",
+		"hidden": false
+	},
+	{
+		"client": "Schwulenberatung Berlin",
+		"category": "App concept & design",
+		"year": "2021",
+		"type": "projects",
+		"description": "Concepted and designed the internal time tracking tool.",
+		"hidden": false
+	},
+	{
+		"client": "Paul Solutions",
+		"category": "Saas design, Webflow design & dev",
+		"year": "2021",
+		"type": "projects",
+		"link": "https://www.paul-solutions.de/",
+		"linkText": "paul-solutions.de",
+		"description": "Designed the new Saas qm plattform for doctors and hospitals and developed the landing page with Webflow.",
+		"hidden": false
+	},
+	{
 		"client": "Forget Finance",
 		"category": "Webflow dev",
 		"year": "2021",
@@ -7,7 +45,7 @@
 		"link": "https://forget.finance",
 		"linkText": "forget.finance",
 		"description": "Developed the new website for fintech startup Forget.finance with Webflow.",
-		"hidden": true
+		"hidden": false
 	},
 	{
 		"client": "Mission Zukunfstfonds",
@@ -26,7 +64,7 @@
 		"type": "projects",
 		"link": "https://expedition.thepioneer.de/",
 		"linkText": "expedition.thepioneer.de",
-		"description": "Designed and developed the landingpage for ThePioneerExpedition with Webflow.",
+		"description": "Designed and developed the landing page for ThePioneerExpedition with Webflow.",
 		"hidden": false
 	},
 	{
@@ -46,7 +84,7 @@
 		"type": "projects",
 		"link": "https://support.thepioneer.de/",
 		"linkText": "support.thepioneer.de",
-		"description": "Designed and developed the landingpage to support the ThePioneer mission with Webflow.",
+		"description": "Designed and developed the landing page to support the ThePioneer mission with Webflow.",
 		"hidden": false
 	},
 	{
@@ -56,7 +94,7 @@
 		"type": "projects",
 		"link": "https://experience.thepioneer.de/",
 		"linkText": "experience.thepioneer.de",
-		"description": "Designed and developed the landingpage for ThePioneerExperience with Webflow.",
+		"description": "Designed and developed the landing page for ThePioneerExperience with Webflow.",
 		"hidden": false
 	},
 	{
@@ -76,7 +114,7 @@
 		"type": "projects",
 		"link": "https://www.dam-podcast.de/",
 		"linkText": "dam-podcast.de",
-		"description": "Developed the landing page Axel Springer Audio's new Podcast Dark Audio Moments with Webflow.",
+		"description": "Developed the landing page for Axel Springer Audio's new podcast Dark Audio Moments with Webflow.",
 		"hidden": false
 	},
 	{
@@ -179,7 +217,7 @@
 		"category": "Chatbot concept & design",
 		"year": "2018",
 		"type": "projects",
-		"description": "Created a concept, design and prototype for a Telekom chatbot.",
+		"description": "Created a concept, design and prototype for an award winning Telekom chatbot.",
 		"hidden": false
 	},
 	{
