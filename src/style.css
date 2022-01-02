@@ -170,7 +170,7 @@ footer {
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: url('/static/images/grain.jpg');
+	background: url('/images/grain.jpg');
 	background-size: 10rem;
 	mix-blend-mode: overlay;
 }

@@ -1,6 +1,6 @@
 <script>
-	import profile from '/static/images/profile.jpg';
-	import copyUnderline from '/static/images/copy-underline.svg';
+	import profile from '/images/profile.jpg';
+	import copyUnderline from '/images/copy-underline.svg';
 </script>
 
 <section id="about">
