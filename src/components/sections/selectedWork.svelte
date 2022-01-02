@@ -1,5 +1,5 @@
 <script>
-	import joinPolitics from '/static/images/joinpolitics.jpg';
+	import joinPolitics from '/images/joinpolitics.jpg';
 </script>
 
 <section id="selected-work">
