@@ -1,13 +1,43 @@
 [
 	{
+		"client": "The Marketer",
+		"category": "Webflow dev",
+		"year": "2022",
+		"type": "projects",
+		"link": "https://the-marketer.de",
+		"linkText": "the-marketer.de",
+		"description": "Developed the website for law marketing agency the marketer.",
+		"hidden": true
+	},
+	{
+		"client": "BLØSSØM",
+		"category": "Webflow dev",
+		"year": "2022",
+		"type": "projects",
+		"link": "https://www.blssm.design",
+		"linkText": "blssm.design",
+		"description": "Developed the landing page for BLØSSØM.",
+		"hidden": false
+	},
+	{
+		"client": "Saiga",
+		"category": "Webflow dev",
+		"year": "2022",
+		"type": "projects",
+		"link": "https://www.getsaiga.com",
+		"linkText": "getsaiga.com",
+		"description": "Developed and optimized main features of the landing page for digital personal assistant startup Saiga.",
+		"hidden": false
+	},
+	{
 		"client": "Axel Springer Audio",
 		"category": "Webflow design & dev",
-		"year": "2021",
+		"year": "2022",
 		"type": "projects",
 		"link": "https://www.wettlauf-der-koenige.de/",
 		"linkText": "wettlauf-der-könige.de",
 		"description": "Developed the landing page for Axel Springer Audio's new podcast Wettlauf der Könige with Webflow.",
-		"hidden": true
+		"hidden": false
 	},
 	{
 		"client": "Feinarbyte",
