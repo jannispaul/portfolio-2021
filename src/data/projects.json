@@ -269,7 +269,7 @@
 		"type": "projects",
 		"linkText": "mediapioneer.com",
 		"link": "https://mediapioneer.com",
-		"description": "Built a Wordpress site that the fast-growing MediaPioneer team can manage independently.",
+		"description": "Built a wordpress site that the fast-growing MediaPioneer team can manage independently.",
 		"hidden": false
 	},
 	{
@@ -293,7 +293,7 @@
 		"category": "Email design & dev",
 		"year": "2018",
 		"type": "projects",
-		"description": "Design and developed an internal email.",
+		"description": "Designed and developed an internal email.",
 		"hidden": false
 	},
 	{
