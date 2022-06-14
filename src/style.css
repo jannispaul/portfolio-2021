@@ -221,7 +221,7 @@ mostly setting variables and spacing
 		.blur is template for .second and .third 
 	*/
 	.blur {
-		--size: 25rem;
+		--size: 35rem;
 		top: calc(var(--size) / 3);
 		right: auto;
 		bottom: auto;
@@ -231,7 +231,7 @@ mostly setting variables and spacing
 		will-change: transform;
 	}
 	.second {
-		--size: 25rem;
+		--size: 35rem;
 		top: calc(var(--size) / -1.2);
 		right: calc(var(--size) / 2);
 		bottom: auto;
@@ -241,7 +241,7 @@ mostly setting variables and spacing
 		will-change: transform;
 	}
 	.third {
-		--size: 18rem;
+		--size: 27rem;
 		top: calc(var(--size) / -4);
 		right: calc(var(--size) / 2);
 		bottom: auto;
