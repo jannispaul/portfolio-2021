@@ -1,27 +1,57 @@
 [
 	{
-		"client": "The Marketer",
-		"category": "Webflow dev",
+		"client": "Gabor Steingart",
+		"category": "Webflow design & dev",
 		"year": "2022",
 		"type": "projects",
-		"link": "https://the-marketer.de",
-		"linkText": "the-marketer.de",
-		"description": "Developed the website for law marketing agency the marketer.",
+		"link": "https://www.gabor-steingart.com",
+		"linkText": "gabor-steingart.com",
+		"description": "Developed the website for reknown journalist and ThePioneer founder Gabor Steingart.",
 		"hidden": true
 	},
 	{
-		"client": "BLØSSØM",
+		"client": "Axel Springer Audio",
+		"category": "Webflow design & dev",
+		"year": "2022",
+		"type": "projects",
+		"link": "https://www.stories.fm",
+		"linkText": "stories.fm",
+		"description": "Developed the website for podcast radio Stories.fm.",
+		"hidden": true
+	},
+	{
+		"client": "Aware",
 		"category": "Webflow dev",
+		"year": "2022",
+		"type": "projects",
+		"link": "https://www.aware.app",
+		"linkText": "aware.app",
+		"description": "Developed the website for health start-up aware.",
+		"hidden": false
+	},
+	{
+		"client": "Forget Finance",
+		"category": "Webflow dev",
+		"year": "2022",
+		"type": "projects",
+		"link": "https://forget.finance",
+		"linkText": "forget.finance",
+		"description": "Developed new features and pages for fintech startup Forget.finance.",
+		"hidden": false
+	},
+	{
+		"client": "BLØSSØM",
+		"category": "Webflow design & dev",
 		"year": "2022",
 		"type": "projects",
 		"link": "https://www.blssm.design",
 		"linkText": "blssm.design",
-		"description": "Developed the landing page for BLØSSØM.",
+		"description": "Developed the landing page for design collective BLØSSØM.",
 		"hidden": false
 	},
 	{
 		"client": "Saiga",
-		"category": "Webflow dev",
+		"category": "Webflow design & dev",
 		"year": "2022",
 		"type": "projects",
 		"link": "https://www.getsaiga.com",
