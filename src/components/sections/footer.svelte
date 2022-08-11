@@ -1,7 +1,7 @@
 <footer>
 	<div class="footer-container">
 		<a href="/imprint">Imprint</a>
-		<p>2021</p>
+		<p>2022</p>
 	</div>
 </footer>
 

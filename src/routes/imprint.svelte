@@ -14,7 +14,7 @@
 			<br /><br />
 			E-Mail: <a href="mailto:hi@paul-wicke.de">hi@paul-wicke.de</a>
 			<br /><br />
-			Keine Tracking, keine Cookies
+			No tracking, no cookies
 		</p>
 	</div>
 </section>
