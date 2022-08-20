@@ -10,6 +10,16 @@
 		"hidden": true
 	},
 	{
+		"client": "Patrick & Felix ",
+		"category": "Webflow dev",
+		"year": "2022",
+		"type": "projects",
+		"link": "https://quickcoffee.vc",
+		"linkText": "quickcoffee.vc",
+		"description": "Developed the website for the Quick Coffee podcast.",
+		"hidden": true
+	},
+	{
 		"client": "Axel Springer Audio",
 		"category": "Webflow design & dev",
 		"year": "2022",
@@ -54,9 +64,7 @@
 		"category": "Webflow design & dev",
 		"year": "2022",
 		"type": "projects",
-		"link": "https://www.getsaiga.com",
-		"linkText": "getsaiga.com",
-		"description": "Developed and optimized main features of the landing page for digital personal assistant startup Saiga.",
+		"description": "Developed and optimized main features of the landing page for AI personal assistant startup Saiga.",
 		"hidden": false
 	},
 	{
